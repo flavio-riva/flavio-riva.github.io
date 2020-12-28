@@ -1,7 +1,9 @@
-I am an Associate Professor at the [Department of Economics](http://economics.harvard.edu/) at Harvard University. I graduated from UC Berkeley with a PhD in Economics in 2014. 
+Hi, welcome to my website! I am a Ph.D. candidate in Public Policy and Government at Fundação Getulio Vargas (EAESP/FGV). 
 
-My research tries to bring insights from psychology to bear on topics in economics, particularly topics relevant to developing countries. Recent projects include studying how improving sleep affects the economic outcomes of workers in India, how the endowment effect influences consumer demand for collateralized loans in Kenya, how research findings affect the beliefs and policy choices of mayors in Brazil, and how mixing rich and poor students in schools in India affects social preferences and behaviors.
+Currently, I am working on two impact evaluation projects that illustrate how educational and health technologies can improve human capital accumulation among highschool and primary students in Brazilian public schools.
 
-I am a Faculty Research Fellow at the National Bureau of Economic Research (NBER), and a faculty affiliate at the The Abdul Latif Jameel Poverty Action Lab (JPAL). I serve as an Associate Editor at the *Journal of Political Economy*. Together with Frank Schilbach and Heather Schofield, I help run the [Behavioral Development Lab](https://behavioraldevlab.org/index.html) in India. 
+More generally, I am interested in empirical and econometric work in development economics, and dedicate my time to policy work. I truly believe that evidence-informed decision-making is the key to the development and strengthening of public policies and to positively impact the livelihoods of those who need the most.
+
+I hold a bachelor’s degree in Social Sciences and a bachelor’s and Msc. degree in Economics from the São Paulo School of Economics (EESP/FGV).  In the past, I worked in the World Bank at Washington DC supporting countries in the Latin America and Caribbean Region and countries in the South Asia Region.
 
 __[Curriculum Vitae](/pdf/Rao_CV_latest.pdf")__ (Updated June 2020)

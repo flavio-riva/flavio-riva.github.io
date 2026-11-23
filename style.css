@@ -297,3 +297,7 @@ a.letrus, .bio a.letrus, .ptitle a.letrus { color: var(--letrus); }
 .bio > p, .bio > details, .bio > div, .bio > figure.lapp-fig { margin: 0 0 12px; }
 .bio > :last-child { margin-bottom: 0; }
 @media (max-width: 860px) { .portrait-top .portrait { width: 96px; height: 96px; } .portrait-top { margin-right: 14px; } }
+/* cur-pdf-mark: "Currently" titles read as links: bold, and a small "PDF" tag with an open-in-new-tab arrow. */
+.bio .current li > a:first-child { font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+.bio .current li > a:first-child:hover { text-decoration-color: currentColor; }
+.bio .current li > a:first-child[href$=".pdf"]::after { content: "PDF \2197"; display: inline-block; margin-left: 6px; padding: 1px 5px; font: 700 10.5px/1.4 var(--sans); letter-spacing: .03em; color: var(--title); border: 1px solid color-mix(in srgb, var(--title) 45%, transparent); border-radius: 4px; vertical-align: 2px; text-decoration: none; }

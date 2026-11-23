@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt" data-read="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Flávio Riva | Ensino médio em tempo integral: versão em revisão</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* Same layout as lotta/: a narrow column, the code form, and the list of files. */
+  .rev { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+  .rev h1 { font: 500 34px/1.2 var(--day-serif, Georgia, serif); color: var(--ink); margin: 0 0 6px; }
+  .rev .by { font: 400 16px/1.5 var(--sans); color: var(--muted); margin: 0 0 16px; }
+  .rev .lead { font: 400 17px/1.6 var(--sans); color: var(--text-old); margin: 0 0 22px; }
+  .rev .aviso { font: 500 14px/1.5 var(--sans); color: #8a3a1e; background: #fdf1ec; border: 1px solid #f3cfc2;
+    border-radius: 8px; padding: 10px 14px; margin: 0 0 26px; }
+  .gate { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 8px 0 0; }
+  .gate label { font: 500 15px/1.4 var(--sans); color: var(--ink-2); width: 100%; }
+  .gate input { font: 400 16px/1.4 var(--sans); padding: 9px 12px; border: 1px solid var(--rule); border-radius: 8px;
+    min-width: 220px; background: #fff; color: var(--ink); }
+  .gate button { font: 600 14px/1 var(--sans); padding: 11px 16px; border-radius: 8px; border: 1px solid #0e5c60;
+    background: #0e5c60; color: #fff; cursor: pointer; }
+  .gate .erro { font: 400 14px/1.4 var(--sans); color: #a12a2a; width: 100%; min-height: 1.4em; margin: 0; }
+  .files { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
+  .files li { display: flex; align-items: baseline; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .files a { font: 500 19px/1.35 var(--day-serif, Georgia, serif); color: #0e5c60; text-decoration: none; }
+  .files a:hover { text-decoration: underline; }
+  .files .pg { font: 400 13px/1.4 var(--sans); color: var(--muted); margin-left: auto; white-space: nowrap; }
+  .volta { margin-top: 30px; font: 400 14px/1.5 var(--sans); }
+  .volta a { color: #0e5c60; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main class="rev">
+  <h1>What Does Universal Full-Day High School Buy?</h1>
+  <p class="by">Samuel Franco, Bruna Goussain e Flávio Riva</p>
+  <p class="lead">Versão para revisão do artigo sobre a universalização do ensino médio em tempo integral no Piauí: aprendizagem, homicídios de jovens, gravidez na adolescência e equidade.</p>
+
+  <form class="gate" id="gate" autocomplete="off">
+    <label for="codigo">Digite o código de acesso:</label>
+    <input id="codigo" name="codigo" type="password" inputmode="text" spellcheck="false">
+    <button type="submit">Entrar</button>
+    <p class="erro" id="erro" role="alert"></p>
+  </form>
+
+  <div id="conteudo" hidden>
+    <p class="aviso">Versão em revisão. Os resultados são preliminares e o texto não deve circular.</p>
+    <ul class="files">
+      <li><a data-f="paper.pdf" target="_blank" rel="noopener">Artigo</a><span class="pg">PDF, 38 páginas</span></li>
+      <li><a data-f="online_appendix.pdf" target="_blank" rel="noopener">Apêndice online</a><span class="pg">PDF, 13 páginas</span></li>
+      <li><a data-f="slides.pdf" target="_blank" rel="noopener">Slides</a><span class="pg">PDF, 53 páginas</span></li>
+    </ul>
+  </div>
+
+  <p class="volta"><a href="../">Página de Flávio Riva</a></p>
+</main>
+<script>
+  // The same light gate as lotta/: the code is checked by its SHA-256, and the files live in a folder whose name
+  // is derived from the code (SHA-256 of "pasta:" + code), so neither appears in this source.
+  (function () {
+    var H = "4c51c9cd8048144f5efa784d2a96babd88e70ae81da1c9b9d27b77ee55f303a9";
+    var form = document.getElementById("gate"), box = document.getElementById("conteudo"), err = document.getElementById("erro");
+    function hex(buf) { return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ("0" + b.toString(16)).slice(-2); }).join(""); }
+    function sha(s) { return crypto.subtle.digest("SHA-256", new TextEncoder().encode(s)).then(hex); }
+    function abrir(pasta) {
+      Array.prototype.forEach.call(box.querySelectorAll("a[data-f]"), function (a) { a.href = pasta + "/" + a.getAttribute("data-f"); });
+      form.hidden = true; box.hidden = false;
+    }
+    if (!(window.crypto && crypto.subtle && window.TextEncoder)) { err.textContent = "Abra esta página em um navegador atualizado."; return; }
+    var salvo = null; try { salvo = sessionStorage.getItem("emti"); } catch (e) {}
+    if (salvo) abrir(salvo);
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var v = document.getElementById("codigo").value.trim().toLowerCase();
+      sha(v).then(function (h) {
+        if (h !== H) { err.textContent = "Código incorreto."; return; }
+        return sha("pasta:" + v).then(function (f) { var pasta = f.slice(0, 20); try { sessionStorage.setItem("emti", pasta); } catch (e) {} abrir(pasta); });
+      }, function () { err.textContent = "Código incorreto."; });
+    });
+  })();
+</script>
+</body>
+</html>

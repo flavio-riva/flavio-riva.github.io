@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt" data-read="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Flávio Riva | Revisões realistas</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* Page-specific: a narrow column, the code form, and the list of decks. */
+  .lotta { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+  .lotta h1 { font: 500 34px/1.2 var(--day-serif, Georgia, serif); color: var(--ink); margin: 0 0 6px; }
+  .lotta .lead { font: 400 17px/1.6 var(--sans); color: var(--text-old); margin: 0 0 22px; }
+  .lotta .aviso { font: 500 14px/1.5 var(--sans); color: #8a3a1e; background: #fdf1ec; border: 1px solid #f3cfc2;
+    border-radius: 8px; padding: 10px 14px; margin: 0 0 26px; }
+  .gate { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 8px 0 0; }
+  .gate label { font: 500 15px/1.4 var(--sans); color: var(--ink-2); width: 100%; }
+  .gate input { font: 400 16px/1.4 var(--sans); padding: 9px 12px; border: 1px solid var(--rule); border-radius: 8px;
+    min-width: 220px; background: #fff; color: var(--ink); }
+  .gate button { font: 600 14px/1 var(--sans); padding: 11px 16px; border-radius: 8px; border: 1px solid #0e5c60;
+    background: #0e5c60; color: #fff; cursor: pointer; }
+  .gate .erro { font: 400 14px/1.4 var(--sans); color: #a12a2a; width: 100%; min-height: 1.4em; margin: 0; }
+  .decks { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
+  .decks li { display: flex; align-items: baseline; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .decks .n { font: 600 12px/1 var(--sans); color: #fff; background: #ed5635; border-radius: 50%; width: 26px; height: 26px;
+    display: inline-grid; place-items: center; flex: none; transform: translateY(-2px); }
+  .decks a { font: 500 19px/1.35 var(--day-serif, Georgia, serif); color: #0e5c60; text-decoration: none; }
+  .decks a:hover { text-decoration: underline; }
+  .decks .pg { font: 400 13px/1.4 var(--sans); color: var(--muted); margin-left: auto; white-space: nowrap; }
+  .volta { margin-top: 30px; font: 400 14px/1.5 var(--sans); }
+  .volta a { color: #0e5c60; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main class="lotta">
+  <h1>Revisões realistas: Claudia das Públicas</h1>
+  <p class="lead">Oito apresentações preparadas para a Gabriela Lotta. Cada uma aplica a revisão realista (contexto, mecanismo e resultado) a uma política em que trabalho, seguindo os componentes da gestão com base em evidência.</p>
+
+  <form class="gate" id="gate" autocomplete="off">
+    <label for="codigo">Digite o código de acesso:</label>
+    <input id="codigo" name="codigo" type="password" inputmode="text" spellcheck="false">
+    <button type="submit">Entrar</button>
+    <p class="erro" id="erro" role="alert"></p>
+  </form>
+
+  <div id="conteudo" hidden>
+    <p class="aviso">As apresentações trazem resultados preliminares e não devem circular.</p>
+    <ol class="decks">
+      <li><span class="n">1</span><a data-f="apostas_online.pdf" target="_blank" rel="noopener">Proibição das apostas online (2026)</a><span class="pg">PDF, 23 páginas</span></li>
+      <li><span class="n">2</span><a data-f="ppp_escola_bem_cuidada.pdf" target="_blank" rel="noopener">PPP Escola Bem-Cuidada, Porto Alegre</a><span class="pg">PDF, 24 páginas</span></li>
+      <li><span class="n">3</span><a data-f="primeira_infancia_melhor.pdf" target="_blank" rel="noopener">Primeira Infância Melhor</a><span class="pg">PDF, 25 páginas</span></li>
+      <li><span class="n">4</span><a data-f="alfabetizacao_fonica.pdf" target="_blank" rel="noopener">Alfabetização fônica</a><span class="pg">PDF, 24 páginas</span></li>
+      <li><span class="n">5</span><a data-f="ensino_medio_tempo_integral.pdf" target="_blank" rel="noopener">Ensino Médio em Tempo Integral, SP</a><span class="pg">PDF, 25 páginas</span></li>
+      <li><span class="n">6</span><a data-f="saude_da_familia_educacao.pdf" target="_blank" rel="noopener">Saúde da Família e educação</a><span class="pg">PDF, 24 páginas</span></li>
+      <li><span class="n">7</span><a data-f="jovem_aprendiz.pdf" target="_blank" rel="noopener">Jovem Aprendiz</a><span class="pg">PDF, 25 páginas</span></li>
+      <li><span class="n">8</span><a data-f="saude_na_escola.pdf" target="_blank" rel="noopener">Programa Saúde na Escola</a><span class="pg">PDF, 24 páginas</span></li>
+    </ol>
+  </div>
+
+  <p class="volta"><a href="../">Página de Flávio Riva</a></p>
+</main>
+<script>
+  // A light gate, as agreed. The code is checked by its SHA-256, and the decks live in a folder whose name is
+  // derived from the code (SHA-256 of "pasta:" + code), so neither the code nor the folder appears in this source.
+  // A correct entry is remembered for this browser tab.
+  (function () {
+    var H = "73f356e2b27cf7e649c1a3d5ef3669f1357e688c70bb0b11101cba237616339d";
+    var form = document.getElementById("gate"), box = document.getElementById("conteudo"), err = document.getElementById("erro");
+    function hex(buf) { return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ("0" + b.toString(16)).slice(-2); }).join(""); }
+    function sha(s) { return crypto.subtle.digest("SHA-256", new TextEncoder().encode(s)).then(hex); }
+    function abrir(pasta) {
+      Array.prototype.forEach.call(box.querySelectorAll("a[data-f]"), function (a) { a.href = pasta + "/" + a.getAttribute("data-f"); });
+      form.hidden = true; box.hidden = false;
+    }
+    if (!(window.crypto && crypto.subtle && window.TextEncoder)) { err.textContent = "Abra esta página em um navegador atualizado."; return; }
+    var salvo = null; try { salvo = sessionStorage.getItem("lotta"); } catch (e) {}
+    if (salvo) abrir(salvo);
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var v = document.getElementById("codigo").value.trim().toLowerCase();
+      sha(v).then(function (h) {
+        if (h !== H) { err.textContent = "Código incorreto."; return; }
+        return sha("pasta:" + v).then(function (f) { var pasta = f.slice(0, 20); try { sessionStorage.setItem("lotta", pasta); } catch (e) {} abrir(pasta); });
+      }, function () { err.textContent = "Código incorreto."; });
+    });
+  })();
+</script>
+</body>
+</html>

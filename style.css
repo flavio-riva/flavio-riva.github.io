@@ -8,7 +8,7 @@
   /* Areas */
   --lab: #b52e2f; --hea: #006ea0; --edu: #467a37; --ec: #c3611d; --vio: #a73946; --age: #1e325c;
   /* Program colours, from each program's logo: Primeira Infância Melhor, Programa Saúde na Escola, Saúde da Família */
-  --pim: #eb1587; --pse: #1e7b34; --fhp: #104878; --emti: #006e46; /* Piauí paper: link green of the paper and its figures */
+  --pim: #eb1587; --pse: #14688a; --fhp: #104878; --emti: #006e46; /* Piauí paper: link green of the paper and its figures */
   --rr-bg: #fff3cd; --rr-fg: #856404; --rr-bd: #ffc107; --dr-bg: #e3e8fa; --dr-fg: #2c3f9e; --dr-bd: #b4c0f0;
   --so-bg: #eef0f3; --so-fg: #4a5360; --so-bd: #d5d9df; --fi-bg: #e4eedf; --fi-fg: #2f5524; --fi-bd: #b5cfaa;
   --serif: Georgia, serif;
@@ -18,7 +18,7 @@
 @media (prefers-color-scheme: dark) {
   :root { --bg: #121417; --side: #1a1d21; --ink: #e8e9eb; --ink-2: #c6cad0; --muted: #98a0aa; --rule: #2c3036;
           --text-old: #c6cad0; --title: #8ab4f8; --coauth: #9cc3ef; --mat: #ff8a80; --media: #81c995; --navy: #aebde3;
-          --lab: #f08a8b; --hea: #5fb7e0; --edu: #8cc47a; --ec: #f0a060; --vio: #e38a95; --age: #aebde3; --pim: #f472b6; --emti: #a0cd96; --pse: #6fcf84; --fhp: #8ab8de;
+          --lab: #f08a8b; --hea: #5fb7e0; --edu: #8cc47a; --ec: #f0a060; --vio: #e38a95; --age: #aebde3; --pim: #f472b6; --emti: #a0cd96; --pse: #7ab8d4; --fhp: #8ab8de;
           --rr-bg: #3a3112; --rr-fg: #f3d27a; --rr-bd: #8a6d1a; --dr-bg: #1c2550; --dr-fg: #b4c0f0; --dr-bd: #3a4fa8;
           --so-bg: #23272d; --so-fg: #b4bcc6; --so-bd: #3a4049; --fi-bg: #1d2e18; --fi-fg: #a8d197; --fi-bd: #3f6633; color-scheme: dark; }
 }
@@ -234,7 +234,7 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
   --bg: #fdfdfc; --side: #f4f5f4; --ink: #14181b; --ink-2: #2b3238; --muted: #5a656e; --rule: #e2e5e6;
   --text-old: #2b3238; --title: #0e5c60; --coauth: #0e5c60; --navy: #0e5c60; --mat: #0e5c60; --media: #0e5c60;
   --bar: #fdfdfc; --bar-ink: #5a656e;
-  --pim: #eb1587; --pse: #1e7b34; --fhp: #104878; --emti: #006e46;
+  --pim: #eb1587; --pse: #14688a; --fhp: #104878; --emti: #006e46;
   --sans: "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --day-serif: "Newsreader", Georgia, "Times New Roman", serif;
   color-scheme: light;

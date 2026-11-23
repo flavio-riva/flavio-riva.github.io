@@ -19,7 +19,7 @@
     document.documentElement.setAttribute("data-lang", l);
     document.documentElement.setAttribute("lang", l === "pt" ? "pt-BR" : "en");
   })();
-  // Daylight reading: ?read=day or a saved choice; its fonts load only when it is on.
+  // Daylight reading is the default; ?read=default or a saved choice turns it off. Its fonts load only when it is on.
   function loadDayFonts() {
     if (document.getElementById("day-fonts")) return;
     var k = document.createElement("link");
@@ -30,7 +30,7 @@
   (function () {
     var q = new URLSearchParams(location.search).get("read"), s = null;
     try { s = localStorage.getItem("read"); } catch (e) {}
-    if (q === "day" || (q === null && s === "day")) { document.documentElement.setAttribute("data-read", "day"); loadDayFonts(); }
+    if (q === "day" || (q !== "default" && !(q === null && s === "default"))) { document.documentElement.setAttribute("data-read", "day"); loadDayFonts(); }
   })();
 </script>
 </head>

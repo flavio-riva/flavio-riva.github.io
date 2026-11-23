@@ -36,7 +36,7 @@ a.pim, .bio a.pim, .ptitle a.pim { color: var(--pim); }
 a.pse, .bio a.pse, .ptitle a.pse { color: var(--pse); }
 a.fhp, .bio a.fhp, .ptitle a.fhp { color: var(--fhp); }
 a.emti, .bio a.emti, .ptitle a.emti { color: var(--emti); }
-.pim-logo, .prog-logo { height: 1.1em; width: auto; vertical-align: -0.2em; margin-right: 0.3em; }
+.pim-logo, .prog-logo { height: 1.1em; width: auto; vertical-align: -0.2em; margin-left: 0.15em; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--title); outline-offset: 2px; border-radius: 2px; }
 p { margin: 0; }
@@ -189,7 +189,7 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
 .plataforma-figs figcaption { margin-top: 6px; font: 12.5px/1.45 var(--sans); color: var(--muted); }
 @media (max-width: 860px) { .plataforma-figs { grid-template-columns: 1fr; } }
 /* Letrus wordmark before the Letrus paper (same idea as the PIM footprints); inverted in dark mode. */
-.letrus-logo { height: 1.35em; width: auto; vertical-align: -0.38em; margin-right: 0.3em; }
+.letrus-logo { height: 1.35em; width: auto; vertical-align: -0.38em; margin-left: 0.15em; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .letrus-logo { filter: invert(1); } }
 :root[data-theme="dark"] .letrus-logo { filter: invert(1); }
 

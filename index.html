@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flávio Riva | Applied Economist</title>
+<meta name="description" content="Flávio Riva is an applied economist studying how public policy shapes human capital in Brazil, from childhood to the first job.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Roboto:wght@700&family=Lato:wght@700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Language: ?lang=pt or a saved choice; English by default.
+  (function () {
+    var q = new URLSearchParams(location.search).get("lang"), s = null;
+    try { s = localStorage.getItem("lang"); } catch (e) {}
+    var l = q === "pt" || q === "en" ? q : (s === "pt" ? "pt" : "en");
+    document.documentElement.setAttribute("data-lang", l);
+    document.documentElement.setAttribute("lang", l === "pt" ? "pt-BR" : "en");
+  })();
+</script>
+</head>
+<body>
+<div class="wrap">
+
+  <aside class="side">
+    <div class="side-inner">
+      <h1 class="name">Flávio Riva</h1>
+      <p class="role"><span class="en">Postdoctoral Fellow</span><span class="pt">Pós-doutorando</span><br><a href="https://eaesp.fgv.br/centros/centro-estudos-implementacao-politicas-educacionais" target="_blank" rel="noopener">FGV-CIPE, FGV EAESP</a><br><a href="https://ed.stanford.edu" target="_blank" rel="noopener">Stanford GSE</a></p>
+      <p class="role muted"><span class="en">PhD in Public Administration and Government, FGV EAESP</span><span class="pt">Doutor em Administração Pública e Governo, FGV EAESP</span></p>
+      <nav class="sections" aria-label="Sections">
+        <a href="#policy-reports" class="pt-first"><span class="en">Policy Reports</span><span class="pt">Notas Técnicas</span></a>
+        <a href="#publications"><span class="en">Publications</span><span class="pt">Publicações</span></a>
+        <a href="#working-papers"><span class="en">Working Papers</span><span class="pt">Artigos em Andamento</span></a>
+        <a href="#work-in-progress"><span class="en">Work in Progress</span><span class="pt">Pesquisas em Curso</span></a>
+        <a href="#policy-reports" class="en-last"><span class="en">Policy Reports</span><span class="pt">Notas Técnicas</span></a>
+        <a href="#earlier-work"><span class="en">Pre-PhD Work</span><span class="pt">Antes do Doutorado</span></a>
+        <a href="#plataforma-impacto" class="pt">Plataforma Impacto</a>
+      </nav>
+      <button type="button" class="lang-toggle" id="lang-toggle"><span class="en">Eu prefiro Português pra ler esse site</span><span class="pt">I prefer to read this site in English</span></button>
+      <p class="updated"><span class="en">Updated November 2026</span><span class="pt">Atualizado em novembro de 2026</span></p>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <p class="contact">
+      <a href="mailto:flaviorussoriva@gmail.com">flaviorussoriva@gmail.com</a><span class="sep">|</span>
+      <a href="papers/riva_cv.pdf" target="_blank" rel="noopener">CV</a><span class="sep">|</span>
+      <a href="https://scholar.google.com/citations?user=T4DZtEYAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a><span class="sep">|</span>
+      <a href="https://github.com/flavio-riva" target="_blank" rel="noopener" id="gh">GitHub</a>
+    </p>
+
+    <section class="bio" aria-label="About">
+      <p class="en">I am a postdoctoral fellow at <a href="https://eaesp.fgv.br/centros/centro-estudos-implementacao-politicas-educacionais" target="_blank" rel="noopener">FGV-CIPE</a>, the Center for Studies on Education Policy Implementation at <a href="https://eaesp.fgv.br" target="_blank" rel="noopener">FGV EAESP</a>, a fellowship run in partnership with the <a href="https://ed.stanford.edu" target="_blank" rel="noopener">Stanford Graduate School of Education</a>.</p>
+      <p class="en">I am interested in research on human capital formation and policy implementation. My research is centered on whether Brazilian policies change educational trajectories, which I study by combining field experiments and quasi-experimental designs.</p>
+      <p class="en">I hold a PhD in Public Administration and Government from FGV EAESP (2022), an MA and a BA in Economics from <a href="https://eesp.fgv.br" target="_blank" rel="noopener">FGV EESP</a> (2016), and a BA in Social Sciences from the <a href="https://www.usp.br" target="_blank" rel="noopener">University of São Paulo</a> (2013).</p>
+      <p class="en">From 2021 to 2026, I was a researcher at the <a href="https://imdsbrasil.org/en" target="_blank" rel="noopener">Instituto Mobilidade e Desenvolvimento Social (Imds)</a>, where I worked on <a href="https://imdsbrasil.org/plataforma-impacto/" target="_blank" rel="noopener">Plataforma Impacto</a>, a public platform of evaluated policies organized by life stage, and on monitoring and evaluation projects in several policy areas, including education, social assistance and labor market policy.</p>
+      <p class="en">Before Imds, I was a researcher at <a href="https://fgvclear.org" target="_blank" rel="noopener">FGV CLEAR</a>, the Center for Learning on Evaluation and Results for Brazil and Lusophone Africa at FGV EESP (2015–2017), and a data analyst at MGov Brasil, now Movva (2017). I was a short-term consultant for the <a href="https://www.worldbank.org/en/topic/poverty" target="_blank" rel="noopener">World Bank</a>'s Poverty and Equity Global Practice, in Washington and São Paulo.</p>
+      <div class="en current"><p>Currently, my main projects are:</p>
+        <ul>
+          <li><span class="nolink"><img class="prog-logo" src="img/fhp_logo.png" alt="" aria-hidden="true">Early-Life Primary Care and Learning in School: Evidence from the Expansion of Brazil's Family Health Program</span>, with Letícia Nunes and Pedro H. Chaves Maia</li>
+          <li><a href="papers/ferman_lima_riva_2025_ai_writing_pedagogy.pdf" target="_blank" rel="noopener"><img class="letrus-logo" src="img/letrus_logo.svg" alt="" aria-hidden="true">Artificial Intelligence, Writing Achievement and Pedagogy: Evidence from High Schools in Brazil</a>, with Bruno Ferman and Lycia Lima</li>
+          <li><a href="papers/melo_riva_2026_better_early_childhoods.pdf" target="_blank" rel="noopener" class="pim"><img class="pim-logo" src="img/pim_feet.png" alt="" aria-hidden="true">Better Early Childhoods and Educational Outcomes: Evidence from Brazil</a>, with Carolina Melo</li>
+          <li><a href="papers/franco_goussain_riva_2026_universal_full_day_high_school.pdf" target="_blank" rel="noopener" class="emti"><img class="prog-logo" src="img/emti_school.svg" alt="" aria-hidden="true">What Does Universal Full-Day High School Buy? Learning, Youth Homicides and Teen Births in Piauí, Brazil</a>, with Samuel Franco and Bruna Goussain</li>
+          <li><a href="papers/riva_2026_does_phonics_flatten_the_gradient.pdf" target="_blank" rel="noopener">Does Phonics Flatten the Gradient? Pedagogy and Socioeconomic Gaps in Early Reading</a></li>
+          <li><span class="nolink">From Apprentice to Formal Worker: Teenagers' Long-Run Careers under Brazil's Apprenticeship Mandate</span>, with Raphael Corbi and Matheus Leal</li>
+          <li><a href="papers/braga_riva_rocha_2026_delivering_health_at_school.pdf" target="_blank" rel="noopener" class="pse"><img class="prog-logo" src="img/pse_kid.svg" alt="" aria-hidden="true">Delivering Health at School and Educational Outcomes: Evidence from Public Schools in Brazil</a>, with Lia Braga and Rudi Rocha</li>
+        </ul>
+      </div>
+
+      <p class="pt">Sou pós-doutorando no <a href="https://eaesp.fgv.br/centros/centro-estudos-implementacao-politicas-educacionais" target="_blank" rel="noopener">FGV-CIPE</a>, o Centro de Estudos em Implementação de Políticas Educacionais da <a href="https://eaesp.fgv.br" target="_blank" rel="noopener">FGV EAESP</a>, em parceria com a <a href="https://ed.stanford.edu" target="_blank" rel="noopener">Stanford Graduate School of Education</a>.</p>
+      <p class="pt">Tenho interesse em pesquisa sobre formação de capital humano e implementação de políticas públicas. Minha pesquisa se concentra em saber se políticas brasileiras mudam trajetórias educacionais, o que estudo combinando experimentos de campo e desenhos quase-experimentais.</p>
+      <p class="pt">Sou doutor em Administração Pública e Governo pela FGV EAESP (2022), mestre e bacharel em Economia pela <a href="https://eesp.fgv.br" target="_blank" rel="noopener">FGV EESP</a> (2016) e bacharel em Ciências Sociais pela <a href="https://www.usp.br" target="_blank" rel="noopener">Universidade de São Paulo</a> (2013).</p>
+      <p class="pt">De 2021 a 2026, fui pesquisador do <a href="https://imdsbrasil.org/" target="_blank" rel="noopener">Instituto Mobilidade e Desenvolvimento Social (Imds)</a>, onde trabalhei na <a href="https://imdsbrasil.org/plataforma-impacto/" target="_blank" rel="noopener">Plataforma Impacto</a>, uma base pública de políticas avaliadas organizada por fase da vida, e em projetos de monitoramento e avaliação em diversas áreas, como educação, assistência social e políticas de mercado de trabalho.</p>
+      <p class="pt">Antes do Imds, fui pesquisador do <a href="https://fgvclear.org" target="_blank" rel="noopener">FGV CLEAR</a>, o Centro de Aprendizagem em Avaliação e Resultados para o Brasil e a África Lusófona, na FGV EESP (2015–2017), e analista de dados na MGov Brasil, hoje Movva (2017). Fui consultor da Prática Global de Pobreza e Equidade do <a href="https://www.worldbank.org/pt/country/brazil" target="_blank" rel="noopener">Banco Mundial</a>, em Washington e em São Paulo.</p>
+      <div class="pt current"><p>Atualmente, meus principais projetos são:</p>
+        <ul>
+          <li><span class="nolink"><img class="prog-logo" src="img/fhp_logo.png" alt="" aria-hidden="true">Early-Life Primary Care and Learning in School: Evidence from the Expansion of Brazil's Family Health Program</span>, com Letícia Nunes e Pedro H. Chaves Maia</li>
+          <li><a href="papers/ferman_lima_riva_2025_ai_writing_pedagogy.pdf" target="_blank" rel="noopener"><img class="letrus-logo" src="img/letrus_logo.svg" alt="" aria-hidden="true">Artificial Intelligence, Writing Achievement and Pedagogy: Evidence from High Schools in Brazil</a>, com Bruno Ferman e Lycia Lima</li>
+          <li><a href="papers/melo_riva_2026_better_early_childhoods.pdf" target="_blank" rel="noopener" class="pim"><img class="pim-logo" src="img/pim_feet.png" alt="" aria-hidden="true">Better Early Childhoods and Educational Outcomes: Evidence from Brazil</a>, com Carolina Melo</li>
+          <li><a href="papers/franco_goussain_riva_2026_universal_full_day_high_school.pdf" target="_blank" rel="noopener" class="emti"><img class="prog-logo" src="img/emti_school.svg" alt="" aria-hidden="true">What Does Universal Full-Day High School Buy? Learning, Youth Homicides and Teen Births in Piauí, Brazil</a>, com Samuel Franco e Bruna Goussain</li>
+          <li><a href="papers/riva_2026_does_phonics_flatten_the_gradient.pdf" target="_blank" rel="noopener">Does Phonics Flatten the Gradient? Pedagogy and Socioeconomic Gaps in Early Reading</a></li>
+          <li><span class="nolink">From Apprentice to Formal Worker: Teenagers' Long-Run Careers under Brazil's Apprenticeship Mandate</span>, com Raphael Corbi e Matheus Leal</li>
+          <li><a href="papers/braga_riva_rocha_2026_delivering_health_at_school.pdf" target="_blank" rel="noopener" class="pse"><img class="prog-logo" src="img/pse_kid.svg" alt="" aria-hidden="true">Delivering Health at School and Educational Outcomes: Evidence from Public Schools in Brazil</a>, com Lia Braga e Rudi Rocha</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="legend"><span class="en">Areas:</span><span class="pt">Áreas:</span>
+      <button type="button" class="k" data-area="edu" style="--c: var(--edu)"><span class="en">Education</span><span class="pt">Educação</span></button>
+      <button type="button" class="k" data-area="hea" style="--c: var(--hea)"><span class="en">Health</span><span class="pt">Saúde</span></button>
+      <button type="button" class="k" data-area="ec" style="--c: var(--ec)"><span class="en">Early childhood</span><span class="pt">Primeira infância</span></button>
+      <button type="button" class="k" data-area="lab" style="--c: var(--lab)"><span class="en">Labor market</span><span class="pt">Mercado de trabalho</span></button>
+      <button type="button" class="k" data-area="vio" style="--c: var(--vio)"><span class="en">Violence and risk</span><span class="pt">Violência e risco</span></button>
+    </p>
+    <div class="filterbar" id="filterbar" hidden role="status"><span class="en">Showing</span><span class="pt">Mostrando</span> <b id="filter-n"></b> <span class="en">items tagged</span><span class="pt">itens com</span> <span class="ftag" id="filter-label"></span> <button type="button" class="fclear" id="filter-clear"><span class="en">Show all</span><span class="pt">Mostrar tudo</span> ×</button></div>
+
+    <div class="sections-flow">
+
+    <section id="publications">
+      <h2><span class="en">Publications</span><span class="pt">Publicações</span></h2>
+      <ol class="papers">
+        <li class="a-lab">
+          <p class="ptitle"><a href="https://www.tandfonline.com/doi/abs/10.1080/07350015.2024.2388639" target="_blank" rel="noopener">Probability of Causation with Sample Selection: A Reanalysis of the Impacts of Jóvenes en Acción on Formality</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://sites.google.com/site/vitorapossebom/" target="_blank" rel="noopener">Vitor Possebom</a></p>
+          <p class="status"><span class="venue">Journal of Business &amp; Economic Statistics</span>, 2024.</p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="https://www.tandfonline.com/doi/abs/10.1080/07350015.2024.2388639" target="_blank" rel="noopener"><span class="en">Published version</span><span class="pt">Versão publicada</span></a><span class="sep">|</span><a href="https://arxiv.org/abs/2210.01938" target="_blank" rel="noopener"><span class="en">arXiv version</span><span class="pt">Versão no arXiv</span></a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 15–29</span><span class="pt">15–29 anos</span></span><span class="t-lab"><span class="en">Active labor market policies</span><span class="pt">Políticas ativas de trabalho</span></span><span class="t-lab"><span class="en">Labor market</span><span class="pt">Mercado de trabalho</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">How many people found formal jobs because of a training program, and not in spite of it? With sample selection the honest answer is a range: among always-employed women in Colombia's Jóvenes en Acción, between 10.2% and 13.4% moved to formal work because of the program. Evaluations that report a single number may be claiming more than the data know.</span><span class="pt">Quantas pessoas conseguiram um emprego formal por causa de um programa de qualificação, e não apesar dele? Com seleção amostral, a resposta honesta é um intervalo: entre as mulheres sempre empregadas do Jóvenes en Acción, na Colômbia, de 10,2% a 13,4% passaram ao emprego formal por causa do programa. Avaliações que reportam um único número podem estar afirmando mais do que os dados sabem.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract"><span class="en">A paper on partial identification. When outcomes are observed only for a selected sample, the data cannot pin down the probability of causation (the share of people whose outcome was caused by a program), but they can bound it. We derive sharp bounds for individuals who are always observed, under three increasingly restrictive sets of assumptions. Among always-employed women in Colombia's Jóvenes en Acción, between 10.2% and 13.4% moved to the formal labor market because of the program, although the 90% confidence region does not rule out a lower bound of zero.</span><span class="pt">Um artigo sobre identificação parcial. Quando os resultados só são observados para uma amostra selecionada, os dados não determinam a probabilidade de causalidade (a parcela de pessoas cujo resultado foi causado por um programa), mas permitem delimitá-la. Derivamos limites estreitos para os indivíduos sempre observados, sob três conjuntos de hipóteses cada vez mais restritivos. Entre as mulheres sempre empregadas do Jóvenes en Acción, na Colômbia, de 10,2% a 13,4% passaram ao mercado de trabalho formal por causa do programa, embora a região de confiança de 90% não descarte um limite inferior igual a zero.</span></p></div>
+        </li>
+        <li class="a-lab">
+          <p class="ptitle"><a href="https://academic.oup.com/book/46710/chapter/410470836" target="_blank" rel="noopener">Brazil: Employment and Inequality Trends</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://www.insper.edu.br/en/docentes/sergio-pinheiro-firpo" target="_blank" rel="noopener">Sergio Firpo</a>, <a href="https://sites.google.com/view/alyssonportella" target="_blank" rel="noopener">Alysson Portella</a> <span class="en">and</span><span class="pt">e</span> <a href="https://www.giovannaubida.com" target="_blank" rel="noopener">Giovanna Úbida</a></p>
+          <p class="status"><span class="en">In</span><span class="pt">Em</span> <span class="venue">Tasks, Skills, and Institutions: The Changing Nature of Work and Inequality</span>, ed. C. Gradín, P. Lewandowski, S. Schotte and K. Sen, Oxford University Press, 2023, pp. 229–252.</p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="https://academic.oup.com/book/46710/chapter/410470836" target="_blank" rel="noopener"><span class="en">Published version</span><span class="pt">Versão publicada</span></a><span class="sep">|</span><a href="https://www.wider.unu.edu/publication/changing-nature-work-and-inequality-brazil-2003%E2%80%9319" target="_blank" rel="noopener"><span class="en">WIDER Working Paper 2021/162</span><span class="pt">WIDER Working Paper 2021/162</span></a></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo</span></button></div>
+          <div class="panel" data-p="a" hidden><p class="abstract"><span class="en">We use different sources of data on the task content of jobs to study how occupations, and the intensity of routine tasks embodied in them, explain changes in employment and earnings in Brazil. We find some evidence of polarization in earnings, but not in employment. Changes in the earnings structure explain most of the fall in inequality between 2003 and 2012, while changes in composition dominate its rise between 2012 and 2019; both are driven by education and its returns. The contribution of routine-task content to inequality is, in general, small.</span><span class="pt">Usamos diferentes fontes de dados sobre o conteúdo de tarefas das ocupações para estudar como as ocupações, e a intensidade de tarefas rotineiras nelas embutida, explicam as mudanças no emprego e nos rendimentos no Brasil. Encontramos alguma evidência de polarização nos rendimentos, mas não no emprego. Mudanças na estrutura de rendimentos explicam a maior parte da queda da desigualdade entre 2003 e 2012, enquanto mudanças de composição dominam sua alta entre 2012 e 2019; ambas são guiadas pela escolaridade e seus retornos. A contribuição do conteúdo rotineiro das tarefas para a desigualdade é, em geral, pequena.</span></p></div>
+        </li>
+        <li class="a-lab">
+          <p class="ptitle"><a href="https://sciendo.com/article/10.2478/izajole-2021-0002" target="_blank" rel="noopener">Technical Education, Non-Cognitive Skills and Labor Market Outcomes: Experimental Evidence from Brazil</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://ri.fgv.br/en/pessoas/juliana-camargo" target="_blank" rel="noopener">Juliana Camargo</a>, <a href="https://scholar.google.com/citations?user=igTAkdwAAAAJ&amp;hl=pt-BR" target="_blank" rel="noopener">Lycia Lima</a> <span class="en">and</span><span class="pt">e</span> <a href="https://scholar.google.com/citations?user=L1kuoWMAAAAJ&amp;hl=pt-BR" target="_blank" rel="noopener">André Portela Souza</a></p>
+          <p class="status"><span class="venue">IZA Journal of Labor Economics</span>, 2021.</p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="https://sciendo.com/article/10.2478/izajole-2021-0002" target="_blank" rel="noopener"><span class="en">Published version (open access)</span><span class="pt">Versão publicada (acesso aberto)</span></a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 15–29</span><span class="pt">15–29 anos</span></span><span class="t-lab"><span class="en">Active labor market policies</span><span class="pt">Políticas ativas de trabalho</span></span><span class="t-lab"><span class="en">Labor market</span><span class="pt">Mercado de trabalho</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">Do free technical courses for public high school students pay off in the labor market? In a waiting-list experiment in Santa Catarina, women gained 21 points in employment, more than 50% in earnings and large gains in non-cognitive skills, while men gained nothing. A program that works for half of its participants is easy to misread as one that works for no one.</span><span class="pt">Cursos técnicos gratuitos para alunos da escola pública compensam no mercado de trabalho? Num experimento com lista de espera em Santa Catarina, as mulheres ganharam 21 pontos de emprego, mais de 50% de renda e muito em habilidades socioemocionais, e os homens nada. Um programa que funciona para metade dos participantes é fácil de confundir com um que não funciona para ninguém.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract"><span class="en">A waiting-list randomized trial in four municipalities of Santa Catarina evaluates scholarships for free technical and vocational courses offered to current and former public high school students. Two years after the courses ended, women offered a place were 21 percentage points (about 33%) more likely to be employed, earned over 50% more and scored 0.5 &sigma; higher on non-cognitive skills; men saw no effects.</span><span class="pt">Um experimento aleatorizado com lista de espera, em quatro municípios de Santa Catarina, avalia bolsas para cursos técnicos e profissionalizantes gratuitos oferecidas a alunos e ex-alunos do ensino médio público. Dois anos após o fim dos cursos, as mulheres sorteadas tinham 21 pontos percentuais (cerca de 33%) mais chance de estar empregadas, renda mais de 50% maior e 0,5 &sigma; a mais em habilidades socioemocionais; entre os homens, não houve efeitos.</span></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="working-papers">
+      <h2><span class="en">Working Papers</span><span class="pt">Artigos em Andamento</span></h2>
+      <ol class="papers">
+        <li class="a-hea">
+          <p class="ptitle"><span class="nolink"><img class="prog-logo" src="img/fhp_logo.png" alt="" aria-hidden="true">Early-Life Primary Care and Learning in School: Evidence from the Expansion of Brazil's Family Health Program</span></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://www.leticianunes.com/" target="_blank" rel="noopener">Letícia Nunes</a> <span class="en">and</span><span class="pt">e</span> <a href="https://sites.google.com/view/phchavesmaia/home" target="_blank" rel="noopener">Pedro H. Chaves Maia</a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 0–3</span><span class="pt">0–3 anos</span></span><span class="t-hea"><span class="en">Maternal and child health</span><span class="pt">Atenção à saúde materno-infantil</span></span><span class="t-edu"><span class="en">Academic achievement</span><span class="pt">Desempenho acadêmico e técnico</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">Does a health worker at the door in early childhood make a better student in fifth grade? Following how Brazil's Family Health Program spread across municipalities from the mid-1990s, we find that early access to primary care raised learning in fifth grade. Universal health coverage is also an education policy.</span><span class="pt">Um agente de saúde batendo à porta na primeira infância forma um aluno melhor no 5º ano? Acompanhando a expansão do Programa Saúde da Família pelos municípios desde meados dos anos 1990, encontramos que o acesso precoce à atenção primária aumentou a aprendizagem no 5º ano. Cobertura universal de saúde também é política educacional.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract" lang="en">We study the effects of early access to primary health care on a rich set of measures of learning and schooling in middle childhood and adolescence, leveraging the expansion of Brazil's national community-based health program from the mid-1990s to the mid-2000s. Using the staggered rollout across the country's municipalities within a cohort difference-in-differences framework, we find that early access increased learning in 5th grade. Overall, the variation we explore to identify causal effects is directly relevant to assessing the benefits of expanding universal health coverage for aggregate human capital accumulation in educational systems.</p></div>
+        </li>
+
+
+        <li class="a-edu">
+          <p class="ptitle"><a href="papers/ferman_lima_riva_2025_ai_writing_pedagogy.pdf" target="_blank" rel="noopener"><img class="letrus-logo" src="img/letrus_logo.svg" alt="" aria-hidden="true">Artificial Intelligence, Writing Achievement and Pedagogy: Evidence from High Schools in Brazil</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://sites.google.com/site/brunoferman/home" target="_blank" rel="noopener">Bruno Ferman</a> <span class="en">and</span><span class="pt">e</span> <a href="https://scholar.google.com/citations?user=igTAkdwAAAAJ&amp;hl=pt-BR" target="_blank" rel="noopener">Lycia Lima</a></p>
+          <p class="status"><span class="en">This version: September 2025.</span><span class="pt">Esta versão: setembro de 2025.</span> <span class="badge badge-rr">R&amp;R JPE: Micro</span></p>
+          <p class="status"><span class="en">New data collection: fieldwork ongoing.</span><span class="pt">Nova coleta de dados: trabalho de campo em andamento.</span></p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="https://www.povertyactionlab.org/case-study/artificial-intelligence-strengthen-high-school-students-writing-skills" target="_blank" rel="noopener">J-PAL Evidence to Policy</a><span class="sep">|</span><a href="https://www.povertyactionlab.org/evaluation/impact-artificial-intelligence-learning-brazil" target="_blank" rel="noopener">J-PAL Summary</a><span class="sep">|</span><a href="https://www.socialscienceregistry.org/trials/3729" target="_blank" rel="noopener">AEA RCT Registry</a><span class="sep">|</span><a href="papers/ferman_lima_riva_2021_awe_pre_analysis_plan.pdf" target="_blank" rel="noopener"><span class="en">Pre-analysis plan</span><span class="pt">Plano de pré-análise</span></a></p>
+          <p class="media"><b><span class="en">Media coverage:</span><span class="pt">Na imprensa:</span></b> <a href="https://www.nexojornal.com.br/colunistas/2021/O-uso-de-intelig%C3%AAncia-artificial-na-prepara%C3%A7%C3%A3o-para-o-Enem" target="_blank" rel="noopener">Nexo</a><span class="sep">|</span><a href="https://valor.globo.com/empresas/noticia/2023/01/15/letrus-quer-usar-inteligencia-artificial-para-ensinar-mais-de-350-mil-alunos-a-escrever.ghtml" target="_blank" rel="noopener">Valor Econômico</a><span class="sep">|</span><a href="https://oglobo.globo.com/economia/ricardo-henriques/coluna/2024/06/ia-e-educacao-desafios-e-possibilidades.ghtml" target="_blank" rel="noopener">O Globo</a><span class="sep">|</span><a href="https://porvir.org/programa-brasileiro-ganha-premio-da-unesco-com-uso-de-inteligencia-artificial-na-educacao/" target="_blank" rel="noopener">Porvir</a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 15–29</span><span class="pt">15–29 anos</span></span><span class="t-edu"><span class="en">Technology for learning</span><span class="pt">Estrutura física e tecnológica para as aprendizagens</span></span><span class="t-edu"><span class="en">Academic achievement</span><span class="pt">Desempenho acadêmico e técnico</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">Can a machine grade the essays so that teachers can teach the writing? In a statewide experiment in Espírito Santo, AI feedback raised scores on the essay of Brazil's high-stakes college exam, and adding human graders bought nicer comments but no extra points. The policy choice is between buying more grading and buying more teacher time, and the data point to time.</span><span class="pt">Uma máquina pode corrigir as redações para que o professor ensine a escrever? Num experimento em toda a rede do Espírito Santo, a correção por inteligência artificial elevou a nota da redação do Enem, e somar corretores humanos melhorou os comentários, mas não a nota. A escolha de política é entre comprar mais correção e comprar mais tempo do professor, e os dados apontam para o tempo.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract" lang="en">This paper studies educational technologies that use artificial and human intelligence to enhance writing instruction. In a large-scale experiment, providing students with an online platform to practice and enabling teachers to outsource grading and feedback tasks to artificial intelligence improved essay scores on a high-stakes exam. Adding human graders to circumvent potential limitations of this automated system improved the perceived quality of feedback, but did not affect the extent to which this enhanced educational technology improved achievement. Both technologies shifted teachers' tasks to individualized instruction, suggesting that teachers used both sets of inputs as complements to the educational inputs they provide to develop complex writing skills.</p></div>
+        </li>
+
+<li class="a-ec">
+          <p class="ptitle"><a href="papers/melo_riva_2026_better_early_childhoods.pdf" target="_blank" rel="noopener" class="pim"><img class="pim-logo" src="img/pim_feet.png" alt="" aria-hidden="true">Better Early Childhoods and Educational Outcomes: Evidence from Brazil</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://sites.google.com/view/carolinamelo/home" target="_blank" rel="noopener">Carolina Melo</a></p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="papers/melo_riva_2026_slides.pdf" target="_blank" rel="noopener"><span class="en">Slides</span><span class="pt">Slides</span></a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 0–3</span><span class="pt">0–3 anos</span></span><span class="t-ec"><span class="en">Parenting support</span><span class="pt">Apoio à parentalidade</span></span><span class="t-edu"><span class="en">Academic achievement</span><span class="pt">Desempenho acadêmico e técnico</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">Does visiting poor families when their babies are young show up in the classroom ten years later? Rio Grande do Sul's home-visiting program, Primeira Infância Melhor, raised test scores at ages 10–11 by about 0.08 SD, most for the weakest students and for children reached in utero or as infants. Start before the cradle, not at the school gate.</span><span class="pt">Visitar famílias pobres quando os filhos são bebês aparece na sala de aula dez anos depois? O Primeira Infância Melhor, do Rio Grande do Sul, elevou as notas aos 10–11 anos em cerca de 0,08 desvio-padrão, sobretudo entre os alunos mais fracos e as crianças alcançadas ainda na gestação ou no primeiro ano de vida. A política começa antes do berço, não no portão da escola.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract" lang="en">This paper examines how broad support for poor families during their children's early childhood affects learning of foundational skills in middle childhood. Using the rollout of a large-scale public policy called Primeira Infância Melhor (PIM, or Better Early Childhood) and a cohort difference-in-differences approach that leverages variation in age at first exposure to the program, we show that: (i) PIM's arrival in a municipality raised Language and Mathematics standardized test scores at ages 10 to 11, at around 0.08σ for exposed cohorts; (ii) effects are large for very low performers, who shift literacy and numeracy thresholds that children are supposed to attain during middle childhood; (iii) reaching children in utero or in the first year of life generates larger effects than reaching them later.</p></div>
+        </li>
+
+<li class="a-edu">
+          <p class="ptitle"><a href="papers/franco_goussain_riva_2026_universal_full_day_high_school.pdf" target="_blank" rel="noopener" class="emti"><img class="prog-logo" src="img/emti_school.svg" alt="" aria-hidden="true">What Does Universal Full-Day High School Buy? Learning, Youth Homicides and Teen Births in Piauí, Brazil</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://br.linkedin.com/in/samuel-franco-1108a021" target="_blank" rel="noopener">Samuel Franco</a> <span class="en">and</span><span class="pt">e</span> Bruna Goussain</p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="papers/franco_goussain_riva_2026_slides.pdf" target="_blank" rel="noopener"><span class="en">Slides</span><span class="pt">Slides</span></a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 15–29</span><span class="pt">15–29 anos</span></span><span class="t-edu"><span class="en">Pedagogy and school management</span><span class="pt">Processos pedagógicos e de gestão em redes escolares</span></span><span class="t-vio"><span class="en">Risk behavior</span><span class="pt">Comportamento de risco</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">What does a state buy when it keeps every high school student in school for eight hours a day? In Piauí, learning gains grew to 0.10 SD after three years, half of what the earlier selective schools suggested, with no fall in youth homicides or teen births. Each real spent returns 12 to 55 centavos of lifetime earnings, about what youth job training delivers.</span><span class="pt">O que um estado compra ao manter todos os alunos do ensino médio na escola oito horas por dia? No Piauí, o ganho de aprendizagem chegou a 0,10 desvio-padrão em três anos, metade do que as escolas seletivas da fase anterior sugeriam, sem queda nos homicídios de jovens nem na gravidez na adolescência. Cada real gasto rende de 12 a 55 centavos de renda ao longo da vida, perto do que entregam os programas de qualificação de jovens.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract" lang="en">Between 2023 and 2025, the Brazilian state of Piauí converted every state high school to an eight-hour school day. Using the staggered conversion of schools and difference-in-differences estimators with not-yet-treated comparison groups, we find that learning gains grew with exposure, from 0.02 standard deviations after one year to 0.10 after three years, when the first converted cohort completed high school, with no change in dropout or pass rates. These gains are half of those of the state's own selective phase before the pandemic, consistent with selective rollouts overstating what universal ones deliver. Imputed school-level effects are larger in schools serving more advantaged students. Youth homicides did not fall: point estimates are positive, imprecise in a setting where youth deaths are rare, concentrated at night and among young people with little schooling rather than among students or during school hours, and not matched by any rise in hospitalizations for assault or notifications of violence. We find no robust effect on teen births, and no evidence that converted schools pushed students out or attracted better-prepared entrants. Measured as a marginal value of public funds, each real of net public spending buys between 12 and 55 centavos of after-tax lifetime earnings, depending on the incremental cost per student, which places the policy next to youth job training and below most programs of college aid.</p></div>
+        </li>
+
+<li class="a-edu">
+          <p class="ptitle"><a href="papers/riva_2026_does_phonics_flatten_the_gradient.pdf" target="_blank" rel="noopener">Does Phonics Flatten the Gradient? Pedagogy and Socioeconomic Gaps in Early Reading</a></p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="papers/riva_2026_phonics_slides.pdf" target="_blank" rel="noopener"><span class="en">Slides</span><span class="pt">Slides</span></a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 6–10</span><span class="pt">6–10 anos</span></span><span class="t-edu"><span class="en">Pedagogy and school management</span><span class="pt">Processos pedagógicos e de gestão em redes escolares</span></span><span class="t-edu"><span class="en">Academic achievement</span><span class="pt">Desempenho acadêmico e técnico</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">Brazil fails its poorest readers by more than almost any other country: is that a problem of pedagogy? Teaching the alphabetic code explicitly raises reading at least as much for disadvantaged children, but it closes gaps only where the program reaches the poorest schools in full. Equity is a matter of delivery, not of method alone.</span><span class="pt">O Brasil falha com seus leitores mais pobres mais do que quase qualquer país: o problema é pedagógico? Ensinar o código alfabético de forma explícita eleva a leitura das crianças mais pobres pelo menos tanto quanto a das demais, mas só reduz as desigualdades onde o programa chega por inteiro às escolas mais pobres. Equidade depende da implementação, não só do método.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract" lang="en">Brazil teaches few children to read well, and it fails the poor by more than any other country in PIRLS 2021. We argue that the second failure is largely pedagogical. Reading is a cultural invention that must be taught. Whatever school leaves to discovery, the family supplies, and families supply it unequally. Systematic phonics moves the decisive input, knowledge of the alphabetic code, from home to school. Across trials and system-wide reforms, it raises reading by 0.24–0.40 standard deviations, against 0.08 for literacy programs without a phonics core. Of more than sixty meta-analyses, six split by socioeconomic status, and none finds phonics less effective for poor children. Re-analysing the public data along that margin (Mississippi's reform, Ceará's Paic, and three randomized trials), we find that phonics-based programs raise reading at least as much for disadvantaged children, by 0.7 SD in Ceará, but compress the gap between children of different backgrounds only weakly (Mississippi's later cohorts) or not at all. Compression appears between schools, where the program reaches the poorest schools in full (Ceará), and reverses where it does not (South Africa). The equity case for phonics is therefore a case for delivery: a codified sequence, in-person support, and assessment tied to remediation. Ceará adds a caution: its racial and gender gaps did not move.</p></div>
+        </li>
+
+<li class="a-lab">
+          <p class="ptitle"><span class="nolink">From Apprentice to Formal Worker: Teenagers' Long-Run Careers under Brazil's Apprenticeship Mandate</span></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://sites.google.com/site/raphaelcorbi/" target="_blank" rel="noopener">Raphael Corbi</a> <span class="en">and</span><span class="pt">e</span> Matheus Leal</p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="https://imdsbrasil.org/publicacao/programa-jovem-aprendiz-empregabilidade-e-renda-formal-do-trabalho-uma-analise-das-primeiras-geracoes-expostas-a-lei-da-aprendizagem-de-2000/" target="_blank" rel="noopener"><span class="en">Imds Technical Note (in Portuguese)</span><span class="pt">Nota Técnica Imds</span></a></p>
+          <p class="media"><b><span class="en">Media coverage:</span><span class="pt">Na imprensa:</span></b> <a href="https://valor.globo.com/brasil/noticia/2025/09/08/subaproveitado-jovem-aprendiz-melhora-renda.ghtml" target="_blank" rel="noopener">Valor Econômico</a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 15–29</span><span class="pt">15–29 anos</span></span><span class="t-lab"><span class="en">Active labor market policies</span><span class="pt">Políticas ativas de trabalho</span></span><span class="t-lab"><span class="en">Labor market</span><span class="pt">Mercado de trabalho</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">Is a teenage apprenticeship a door into formal work, or just cheap labor? After Brazil's 2000 apprenticeship mandate turned apprenticeships into the main first formal job at ages 15–17, an extra apprenticeship raised formal earnings at ages 25–29 by about a third of the pre-reform mean. The mandate looks less like a subsidy to firms and more like a stepping stone for workers.</span><span class="pt">Ser jovem aprendiz abre a porta do emprego formal ou é só mão de obra barata? Depois que a Lei da Aprendizagem de 2000 fez da aprendizagem o principal primeiro emprego formal aos 15–17 anos, cada contrato a mais elevou a renda formal aos 25–29 anos em cerca de um terço da média anterior à reforma. A cota parece menos um subsídio às empresas e mais um degrau para os trabalhadores.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract" lang="en">In December 2000, Brazil turned a dormant apprenticeship system into a mass entry route into formal employment for teenagers: within five years, apprenticeships went from 13.9% to 80.5% of first formal jobs under fixed-term contracts at ages 15–17. We follow the affected cohorts in linked employer–employee records until age 30. Comparing cohorts before and after the reform in microregions where take-up expanded a lot and a little, we find that an additional apprenticeship increased the share of time spent in formal employment at ages 25–29 by 0.131, almost entirely in open-ended jobs, and monthly formal earnings at those ages by 330.2 BRL, about a third of the pre-reform mean. The employment effect survives state-by-cohort fixed effects but not the most conservative heterogeneity-robust estimator, which instead finds a precisely estimated gain in earnings; effects on accumulated formal experience are positive but imprecise. We find no robust effects on hourly wages or schooling, and the gains concentrate among entrants with more than primary schooling. A second design, based on the age-18 eligibility limit, reaches similar conclusions in the late twenties once we net out the pre-program difference between 17- and 18-year-old entrants.</p></div>
+        </li>
+
+<li class="a-hea">
+          <p class="ptitle"><a href="papers/braga_riva_rocha_2026_delivering_health_at_school.pdf" target="_blank" rel="noopener" class="pse"><img class="prog-logo" src="img/pse_kid.svg" alt="" aria-hidden="true">Delivering Health at School and Educational Outcomes: Evidence from Public Schools in Brazil</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> Lia Braga <span class="en">and</span><span class="pt">e</span> <a href="https://www.rudirocha.org/" target="_blank" rel="noopener">Rudi Rocha</a></p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="papers/braga_riva_rocha_2026_delivering_health_at_school_slides.pdf" target="_blank" rel="noopener"><span class="en">Slides</span><span class="pt">Slides</span></a></p>
+          <p class="tags"><span class="t-age"><span class="en">Ages 6–10</span><span class="pt">6–10 anos</span></span><span class="t-hea"><span class="en">Health in communities and schools</span><span class="pt">Saúde nas comunidades e na escola</span></span><span class="t-edu"><span class="en">School flow and retention</span><span class="pt">Fluxo, frequência e retenção escolar</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="q"><span class="en">In short</span><span class="pt">Em resumo</span></button><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo completo, em inglês</span></button></div>
+          <div class="panel" data-p="q" hidden><p class="blurb"><span class="en">What happens when the Family Health team walks into the primary school? When Brazilian municipalities joined the Health at School Program, dropout in grades 1–5 fell by about half, while test scores did not move. For policy, health at school works as a way to keep children in school, not to make them learn more.</span><span class="pt">O que acontece quando a equipe de Saúde da Família entra na escola? Nos municípios que aderiram ao Programa Saúde na Escola, o abandono do 1º ao 5º ano caiu cerca de pela metade, e a proficiência não mudou. Para a política pública, saúde na escola funciona como instrumento de permanência, não de aprendizagem.</span></p></div>
+          <div class="panel" data-p="a" hidden><p class="abstract" lang="en">This paper investigates the educational impacts of a policy-driven change in health services, ranging from anthropometric measurement, ophthalmological screening and referrals to specialized care to coordinated efforts to identify and fight endemic diseases, available to public school students in Brazil. In a municipality panel for all of Brazil from 2000 to 2019, we find that adoption raised the number of Family Health teams pledged per school by 47% and that dropout in grades 1–5 fell by 1.2 percentage points, about half of the counterfactual mean. Failure fell less robustly, and we find no gain in test scores and no effect in high school, which the program did not target. Because eligibility until 2012 targeted municipalities with poor school-quality scores, adopters were on different paths before adoption; matching on covariates does not remove these pre-trends, but synthetic difference-in-differences narrows them, and the dropout effect survives. Inside municipalities, the effect is not driven by school closures.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="work-in-progress">
+      <h2><span class="en">Work in Progress</span><span class="pt">Pesquisas em Curso</span></h2>
+      <ol class="papers">
+        <li class="a-ec">
+          <p class="ptitle"><span class="nolink">Complementarity or Scale? What Survives in Evidence on Dynamic Complementarity</span></p>
+          <p class="status"><span class="badge badge-soon" style="margin-left:0"><span class="en">Draft coming soon</span><span class="pt">Versão em breve</span></span></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo</span></button></div>
+          <div class="panel" data-p="a" hidden><p class="abstract"><span class="en">Research on human capital formation asks whether early and later investments are complements, and whether later investment can make up for missing early investment. The usual evidence, the sign of an interaction, can change when the outcome is rescaled. I propose one number that summarizes what the data can and cannot say: the index of the catch-up point, with its robustness margin. A nonzero index marks a crossing that holds on every outcome scale and survives small errors in the data; an index of zero means the effect only touches zero, and the estimated pattern is a coin flip at any sample size. Read as the fixed point of a planner who sets later investment to close the early gap, the index says whether a policy recommendation has a determinate direction, and the margin gives the probability that the recommended direction is wrong. Revisiting Danish evidence that infant home visiting and preschool are substitutes, I find no crossing in five outcomes: whether preschool offsets missing home visits is undetermined.</span><span class="pt">A pesquisa sobre formação de capital humano pergunta se investimentos precoces e posteriores são complementares, e se o investimento posterior compensa a falta do precoce. A evidência usual, o sinal de uma interação, pode mudar quando o resultado é medido em outra escala. Proponho um número que resume o que os dados podem e não podem dizer: o índice do ponto de recuperação, com sua margem de robustez. Um índice diferente de zero indica um cruzamento que vale em qualquer escala e resiste a pequenos erros nos dados; um índice igual a zero indica que o efeito apenas toca o zero, e o padrão estimado é um cara ou coroa em qualquer tamanho de amostra. Lido como o ponto fixo de um planejador que escolhe o investimento posterior para fechar a lacuna inicial, o índice diz se uma recomendação de política tem direção determinada, e a margem dá a probabilidade de que a direção recomendada esteja errada. Revisitando a evidência dinamarquesa de que visitas domiciliares na primeira infância e pré-escola são substitutas, não encontro cruzamentos em cinco resultados: se a pré-escola compensa a falta de visitas permanece indeterminado.</span></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="policy-reports">
+      <h2><span class="en">Policy Reports</span><span class="pt">Notas Técnicas</span> <span class="h2note"><span class="en">in Portuguese</span><span class="pt">Imds, versões finais</span></span></h2>
+      <ol class="papers">
+        <li class="a-edu">
+          <p class="ptitle"><a href="https://imdsbrasil.org/wp-content/uploads/2026/02/ImdsNT004-2025-PublicPoliciesLearningInequalitiesSocioeconomicLevel.pdf" target="_blank" rel="noopener">Políticas Públicas e Desigualdades de Aprendizado por Nível Socioeconômico: O Quanto É Possível Nivelar o Campo de Jogo?</a></p>
+          <p class="en-sub">Public policies and learning inequalities by socioeconomic level: how far can the playing field be leveled?</p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://br.linkedin.com/in/samuel-franco-1108a021" target="_blank" rel="noopener">Samuel Franco</a></p>
+          <p class="status"><span class="venue"><span class="en">Imds Technical Note</span><span class="pt">Nota Técnica Imds</span></span>, 2025.</p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo</span></button></div>
+          <div class="panel" data-p="a" hidden><p class="abstract"><span class="en">This technical note analyzes socioeconomic differences in Portuguese language learning among public school students in Brazil, combining SAEB microdata for the 5th year of elementary school with the socioeconomic index of their schools, from 2009 to 2023. In 2023, only 3 out of every 10 students in the bottom tenth of the index reached the adequate level, compared to 8 out of 10 in the top tenth. Between 2009 and 2023, all tenths improved by similar amounts, so socioeconomic differences in learning are similar to those of 2009. Ceará is the exception: between 2009 and 2015, as students exposed to the state's literacy policies reached the SAEB, the tenths of the index converged, while inequalities deepened in the other Northeastern states.</span><span class="pt">Esta nota técnica analisa as diferenças socioeconômicas no aprendizado de Língua Portuguesa entre estudantes de escolas públicas no Brasil, combinando os microdados do SAEB para o 5º ano do ensino fundamental com o índice socioeconômico das escolas, de 2009 a 2023. Em 2023, apenas 3 em cada 10 estudantes do décimo mais baixo do índice atingiram o nível adequado, contra 8 em cada 10 no décimo mais alto. Entre 2009 e 2023, todos os décimos avançaram em ritmo semelhante, e as diferenças socioeconômicas no aprendizado são hoje parecidas com as de 2009. O Ceará é a exceção: entre 2009 e 2015, quando chegaram ao SAEB os estudantes expostos às políticas estaduais de alfabetização, os décimos do índice convergiram, enquanto as desigualdades se aprofundaram nos demais estados do Nordeste.</span></p></div>
+        </li>
+        <li class="a-lab">
+          <p class="ptitle"><a href="https://imdsbrasil.org/publicacao/programa-jovem-aprendiz-empregabilidade-e-renda-formal-do-trabalho-uma-analise-das-primeiras-geracoes-expostas-a-lei-da-aprendizagem-de-2000/" target="_blank" rel="noopener">Programa Jovem Aprendiz, Empregabilidade e Renda Formal do Trabalho: Uma Análise das Primeiras Gerações Expostas à Lei da Aprendizagem de 2000</a></p>
+          <p class="en-sub">The Jovem Aprendiz program, employability, and formal labor income: the first generations exposed to the 2000 Apprenticeship Law</p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> <a href="https://sites.google.com/site/raphaelcorbi/" target="_blank" rel="noopener">Raphael Corbi</a>, Sergio Guimarães, Matheus Leal <span class="en">and</span><span class="pt">e</span> Paulo Tafner</p>
+          <p class="status"><span class="venue"><span class="en">Imds Technical Note</span><span class="pt">Nota Técnica Imds</span></span>, 2025.</p>
+          <p class="media"><b><span class="en">Media coverage:</span><span class="pt">Na imprensa:</span></b> <a href="https://valor.globo.com/brasil/noticia/2025/09/08/subaproveitado-jovem-aprendiz-melhora-renda.ghtml" target="_blank" rel="noopener">Valor Econômico</a></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo</span></button></div>
+          <div class="panel" data-p="a" hidden><p class="abstract"><span class="en">The Apprenticeship Law (Law 10.097/2000), which created the Jovem Aprendiz Program, set up a specific hiring regime and minimum quotas for apprentices: from 2001 to 2005, the number of employed apprentices grew more than tenfold. This technical note uses this variation and its heterogeneity across Brazil to study the long-run effects of the program on employability and income, with a difference-in-differences approach that compares people born between 1985 and 1988, who started their careers under the new law, with those born between 1982 and 1984, across microregions with different levels of exposure. Individuals from the more recent cohorts in high-take-up microregions had a higher probability of formal employment and higher income throughout the 2010s, when they were 25 to 29 years old.</span><span class="pt">A Lei da Aprendizagem (Lei 10.097/2000), que criou o Programa Jovem Aprendiz, estabeleceu um regime específico de contratação e cotas mínimas para aprendizes: de 2001 a 2005, o número de aprendizes empregados cresceu mais de 10 vezes. Esta nota técnica explora essa variação e sua heterogeneidade no território brasileiro para investigar os efeitos de longo prazo do programa sobre empregabilidade e renda, com uma abordagem de diferenças-em-diferenças que compara os nascidos entre 1985 e 1988, que iniciaram suas carreiras sob a nova lei, com os nascidos entre 1982 e 1984, em microrregiões com diferentes níveis de exposição. Os indivíduos das coortes mais recentes, em microrregiões de alta adesão, apresentaram maior probabilidade de emprego formal e maior renda ao longo da década de 2010, quando tinham de 25 a 29 anos.</span></p></div>
+        </li>
+        <li class="a-ec">
+          <p class="ptitle"><a href="https://imdsbrasil.org/publicacao/o-processo-de-implementacao-dos-centros-de-referencia-em-assistencia-social-cras-nos-municipios-brasileiros/" target="_blank" rel="noopener">O Processo de Implementação dos Centros de Referência em Assistência Social (CRAS) nos Municípios Brasileiros</a></p>
+          <p class="en-sub">How Social Assistance Reference Centers (CRAS) were implemented in Brazilian municipalities</p>
+          <p class="status"><span class="venue"><span class="en">Imds Technical Note</span><span class="pt">Nota Técnica Imds</span></span>, 2023.</p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo</span></button></div>
+          <div class="panel" data-p="a" hidden><p class="abstract"><span class="en">This technical note contributes to characterizing the expansion of basic social protection in Brazil by studying the implementation of one of its main facilities, the Social Assistance Reference Centers (CRAS). Using data from the SUAS Census from 2007 to 2022 and the 2000 Demographic Census, it describes how CRAS were rolled out over time and space and identifies the characteristics of municipalities that adopted them more or less quickly.</span><span class="pt">Esta nota técnica contribui para a caracterização da expansão da proteção social básica no Brasil, por meio do estudo da implementação de um de seus principais equipamentos: os Centros de Referência da Assistência Social (CRAS). Com dados do Censo SUAS de 2007 a 2022 e do Censo Demográfico de 2000, descreve o processo de implantação dos CRAS no tempo e no espaço e identifica características dos municípios que adotaram os equipamentos de maneira mais ou menos célere.</span></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="earlier-work">
+      <h2><span class="en">Pre-PhD Work</span><span class="pt">Antes do Doutorado</span></h2>
+      <ol class="papers">
+        <li>
+          <p class="ptitle"><a href="https://link.springer.com/chapter/10.1007/978-3-030-25120-8_8" target="_blank" rel="noopener">Sampling for Representative Surveys of Displaced Populations</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> Ana Aguilera, Nandini Krishnan, Juan Muñoz, Dhiraj Sharma <span class="en">and</span><span class="pt">e</span> Tara Vishwanath</p>
+          <p class="status"><span class="en">In</span><span class="pt">Em</span> <span class="venue">Data Collection in Fragile States</span>, ed. J. Hoogeveen and U. Pape, Palgrave Macmillan, 2020.</p>
+        </li>
+        <li>
+          <p class="ptitle"><a href="https://openknowledge.worldbank.org/server/api/core/bitstreams/1fa0e413-d909-56f0-9c76-ebb4be263665/content" target="_blank" rel="noopener">The Lives and Livelihoods of Syrian Refugees in the Middle East: Evidence from the 2015–16 Surveys of Syrian Refugees and Host Communities in Jordan, Lebanon, and Kurdistan, Iraq</a></p>
+          <p class="by"><span class="en">with</span><span class="pt">com</span> Nandini Krishnan, Dhiraj Sharma <span class="en">and</span><span class="pt">e</span> Tara Vishwanath</p>
+          <p class="status"><span class="venue">World Bank Policy Research Working Paper</span>, 2020.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="from-another-life">
+      <h2><span class="en">From Another Life</span><span class="pt">De Outra Vida</span> <span class="h2note"><span class="en">in Portuguese</span><span class="pt">em português</span></span></h2>
+      <ol class="papers">
+        <li>
+          <p class="ptitle"><a href="https://doi.org/10.11606/issn.1982-7547.hd.2012.106216" target="_blank" rel="noopener" lang="pt-BR">Capitalismo e Ascese: Elementos de Articulação Temática em Weber</a></p>
+          <p class="en-sub">Capitalism and Asceticism: Thematic Links in Weber</p>
+          <p class="status"><span class="venue">Humanidades em Diálogo</span>, <span class="en">vol. 4, no. 2</span><span class="pt">v. 4, n. 2</span>, 2012, pp. 171–178.</p>
+          <p class="mat"><b><span class="en">Materials:</span><span class="pt">Materiais:</span></b> <a href="https://revistas.usp.br/humanidades/article/view/106216" target="_blank" rel="noopener"><span class="en">Published version (open access, in Portuguese)</span><span class="pt">Versão publicada (acesso aberto)</span></a></p>
+          <div class="toggles"><button type="button" class="tg" aria-expanded="false" data-p="a"><span class="en">Abstract</span><span class="pt">Resumo</span></button></div>
+          <div class="panel" data-p="a" hidden><p class="abstract"><span class="en">The article proposes a reading of Weber's <i>The Protestant Ethic and the "Spirit" of Capitalism</i> that brings out both the author's methodological assumptions, such as the centrality of the individual agent, and his idea of the autonomy of the different spheres of social action. Originally written as a final paper for an introductory course on Weber's sociology, it seeks to clarify the broader problem of historical causal imputation in Weber's best-known work, highlighting aspects considered central.</span><span class="pt">O objetivo do artigo é propor uma leitura da <i>Ética protestante e o “espírito” do capitalismo</i> que seja capaz de evidenciar tanto pressupostos metodológicos do autor (como, por exemplo, a centralidade do agente individual) quanto a sua ideia da autonomia das diferentes esferas da ação social. Originalmente escrito como trabalho final para matéria de introdução à sociologia de Weber, tenta contribuir para esclarecimento do problema mais geral da imputação causal histórica na famosa obra do autor, ressaltando aspectos considerados centrais.</span></p></div>
+        </li>
+        <li>
+          <p class="ptitle"><span class="nolink">Esboço de uma Teoria da Prática</span></p>
+          <p class="by"><span class="en">Translation of Pierre Bourdieu,</span><span class="pt">Tradução de Pierre Bourdieu,</span> <i lang="fr">Esquisse d'une théorie de la pratique</i> (1972)</p>
+          <p class="status"><span class="en">Unpublished translation, revised November 2026.</span><span class="pt">Tradução inédita, revista em novembro de 2026.</span></p>
+        </li>
+      </ol>
+    </section>
+
+    </div>
+
+    <figure class="art">
+      <img src="escadaria.jpg" width="800" height="1068" alt="Ink and wash drawing of interlocking staircases" loading="lazy">
+      <figcaption><span class="en">Stairs after <a href="https://en.wikipedia.org/wiki/Relativity_(M._C._Escher)" target="_blank" rel="noopener">M. C. Escher</a>.</span><span class="pt">Escadas inspiradas em <a href="https://pt.wikipedia.org/wiki/Relatividade_(M._C._Escher)" target="_blank" rel="noopener">M. C. Escher</a>.</span></figcaption>
+    </figure>
+    <figure class="portrait-end"><img class="portrait" src="photo.png" width="232" height="343" alt="Flávio Riva" loading="lazy"></figure>
+
+
+    <section id="plataforma-impacto" class="pt plataforma" lang="pt-BR">
+      <h2>Plataforma Impacto</h2>
+      <p>Que programas já foram testados para melhorar a alfabetização, reduzir a evasão escolar ou aumentar a renda de jovens? A <a href="https://imdsbrasil.org/plataforma-impacto/" target="_blank" rel="noopener">Plataforma Impacto</a>, do Imds, reúne em acesso público e gratuito avaliações de impacto de políticas e programas de desenvolvimento humano e mobilidade social, no Brasil e no mundo. Cada ficha descreve, em linguagem direta, o desenho do programa, seus efeitos e os mecanismos que os explicam.</p>
+      <p>A busca é organizada por fase da vida, da gestação à vida adulta, e pode ser refinada por país, tipo de programa e resultado que se quer alcançar. Assim, a plataforma responde a perguntas práticas, como “qual o efeito deste programa?” e “como melhorar este indicador?”. Para gestores públicos, equipes técnicas, legisladores, jornalistas e organizações da sociedade civil, é um ponto de partida para desenhar ou rever uma política com base no que já foi avaliado. Trabalhei na plataforma entre 2021 e 2026. <a href="https://imdsbrasil.org/plataforma-impacto/" target="_blank" rel="noopener">Conheça a Plataforma Impacto</a>.</p>
+      <div class="plataforma-figs">
+        <figure>
+          <a href="https://imdsbrasil.org/plataforma-impacto/" target="_blank" rel="noopener"><img src="img/plataforma/plataforma-inicio.jpg" width="800" height="505" alt="Página inicial da Plataforma Impacto, com a busca por fase da vida, por país e avançada" loading="lazy"></a>
+          <figcaption>A página inicial: a busca começa pela fase da vida, pelo país ou por filtros avançados.</figcaption>
+        </figure>
+        <figure>
+          <a href="https://imdsbrasil.org/impacto/integracao-de-software-as-aulas-de-matematica-em-escolas-do-nordeste-do-brasil/" target="_blank" rel="noopener"><img src="img/plataforma/plataforma-ficha.jpg" width="800" height="505" alt="Ficha de uma avaliação de impacto na Plataforma Impacto: software de aritmética em escolas do Nordeste" loading="lazy"></a>
+          <figcaption>Uma ficha: objetivo, onde e quando, desenho, o que se aprendeu com a avaliação e as fontes.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <footer class="foot">© 2026 Flávio Riva<span class="sep">|</span><span class="en">Drawing after M. C. Escher (1898–1972).</span><span class="pt">Desenho inspirado em M. C. Escher (1898–1972).</span></footer>
+  </main>
+</div>
+<script>
+  // "In short" and "Abstract" toggles: each opens its own panel under the paper.
+  document.querySelectorAll(".tg").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var li = b.closest("li"), p = li.querySelector('.panel[data-p="' + b.dataset.p + '"]');
+      var open = b.getAttribute("aria-expanded") === "true";
+      b.setAttribute("aria-expanded", open ? "false" : "true");
+      p.hidden = open;
+    });
+  });
+  // Filtering: click a tag (or an area in the legend) to show only the entries that carry it,
+  // across all sections; click it again, or "Show all", to clear. The choice is kept in the URL (#tag=...).
+  (function () {
+    var items = Array.prototype.slice.call(document.querySelectorAll("ol.papers > li"));
+    var bar = document.getElementById("filterbar"), label = document.getElementById("filter-label"), nEl = document.getElementById("filter-n");
+    var areaOf = function (el) { var m = (el.className || "").match(/\bt-(\w+)/); return m ? m[1] : null; };
+    var keyOf = function (el) { var en = el.querySelector(".en"); return (en ? en.textContent : el.textContent).trim(); };
+    document.querySelectorAll(".tags > span").forEach(function (t) {
+      t.setAttribute("role", "button"); t.setAttribute("tabindex", "0"); t.dataset.key = keyOf(t);
+      t.addEventListener("click", function () { toggle("tag", t.dataset.key, t); });
+      t.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); t.click(); } });
+    });
+    document.querySelectorAll(".legend .k").forEach(function (b) { b.addEventListener("click", function () { toggle("area", b.dataset.area, b); }); });
+    var current = null;
+    function matches(li, f) {
+      if (f.type === "area") {
+        if (li.classList.contains("a-" + f.value)) return true;
+        return Array.prototype.some.call(li.querySelectorAll(".tags > span"), function (t) { return areaOf(t) === f.value; });
+      }
+      return Array.prototype.some.call(li.querySelectorAll(".tags > span"), function (t) { return t.dataset.key === f.value; });
+    }
+    function apply(f, src) {
+      current = f;
+      var n = 0;
+      items.forEach(function (li) { var ok = !f || matches(li, f); li.hidden = !ok; if (ok) n++; });
+      document.querySelectorAll(".sections-flow > section").forEach(function (s) {
+        s.hidden = !!f && !s.querySelector("ol.papers > li:not([hidden])");
+      });
+      document.querySelectorAll(".tags > span, .legend .k").forEach(function (t) {
+        var on = !!f && ((f.type === "tag" && t.dataset.key === f.value) || (f.type === "area" && t.dataset.area === f.value));
+        t.classList.toggle("on", on); t.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      bar.hidden = !f;
+      if (f) {
+        nEl.textContent = n;
+        label.innerHTML = src ? src.innerHTML : f.value;
+        label.style.setProperty("--c", src ? getComputedStyle(src).getPropertyValue("--c") : "");
+        try { history.replaceState(null, "", "#" + f.type + "=" + encodeURIComponent(f.value)); } catch (e) {}
+        bar.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      } else {
+        try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+      }
+    }
+    function toggle(type, value, src) {
+      if (current && current.type === type && current.value === value) apply(null); else apply({ type: type, value: value }, src);
+    }
+    document.getElementById("filter-clear").addEventListener("click", function () { apply(null); });
+    var m = location.hash.match(/^#(tag|area)=(.+)$/);
+    if (m) {
+      var v = decodeURIComponent(m[2]);
+      var src = m[1] === "area" ? document.querySelector('.legend .k[data-area="' + v + '"]') : Array.prototype.find.call(document.querySelectorAll(".tags > span"), function (t) { return t.dataset.key === v; });
+      apply({ type: m[1], value: v }, src);
+    }
+  })();
+  // The button switches language and remembers the choice in this browser.
+  document.getElementById("lang-toggle").addEventListener("click", function () {
+    var root = document.documentElement;
+    var l = root.getAttribute("data-lang") === "pt" ? "en" : "pt";
+    root.setAttribute("data-lang", l);
+    root.setAttribute("lang", l === "pt" ? "pt-BR" : "en");
+    try { localStorage.setItem("lang", l); } catch (e) {}
+    document.title = l === "pt" ? "Flávio Riva | Economista Aplicado" : "Flávio Riva | Applied Economist";
+  });
+  if (document.documentElement.getAttribute("data-lang") === "pt") document.title = "Flávio Riva | Economista Aplicado";
+</script>
+</body>
+</html>

@@ -288,12 +288,3 @@ details.before > p, details.before > figure { margin-top: 10px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]):not([data-read="day"]) { --letrus: #c4c4c4; } }
 a.letrus, .bio a.letrus, .ptitle a.letrus { color: var(--letrus); }
 .bio .current a.letrus { color: var(--title); }
-
-/* Photo at the top left of the bio, next to the greeting; the crop centres the face in the circle. */
-.portrait { object-position: 51% 4%; }
-.portrait-top { float: left; margin: 2px 22px 8px 0; }
-.portrait-top .portrait { width: 132px; height: 132px; margin: 0; display: block; }
-.bio { display: flow-root; }
-.bio > p, .bio > details, .bio > div, .bio > figure.lapp-fig { margin: 0 0 12px; }
-.bio > :last-child { margin-bottom: 0; }
-@media (max-width: 860px) { .portrait-top .portrait { width: 96px; height: 96px; } .portrait-top { margin-right: 14px; } }

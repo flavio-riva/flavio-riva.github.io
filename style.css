@@ -72,7 +72,7 @@ b, strong { font-weight: 700; }
 .lang-toggle:hover { background: var(--navy); color: var(--bg); }
 .updated { margin-top: 18px; font-size: 12.5px; color: var(--muted); }
 
-.content { padding: 52px 56px 64px; max-width: 968px; /* wide enough for every working-paper and publication title on one line */ }
+.content { padding: 52px 56px 64px; max-width: 1140px; /* wide enough for every working-paper and publication title on one line */ }
 .contact { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 15px; color: var(--muted); }
 .contact a { font-weight: 500; }
 /* Main text as on the old sites (Google Site, flavioriva-policy.github.io/site): Noto Sans, regular

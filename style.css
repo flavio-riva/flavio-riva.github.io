@@ -234,7 +234,7 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
   --bg: #fdfdfc; --side: #f4f5f4; --ink: #14181b; --ink-2: #2b3238; --muted: #5a656e; --rule: #e2e5e6;
   --text-old: #2b3238; --title: #0e5c60; --coauth: #0e5c60; --navy: #0e5c60; --mat: #0e5c60; --media: #0e5c60;
   --bar: #fdfdfc; --bar-ink: #5a656e;
-  --pim: #eb1587; --pse: #14688a; --fhp: #104878; --emti: #006e46; --ptitle: #7a2331; /* paper-title links: deep burgundy */
+  --pim: #eb1587; --pse: #14688a; --fhp: #104878; --emti: #006e46; --ptitle: #14181b; /* paper-title links: ink black */
   --sans: "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --day-serif: "Newsreader", Georgia, "Times New Roman", serif;
   color-scheme: light;
@@ -302,5 +302,5 @@ a.letrus, .bio a.letrus, .ptitle a.letrus { color: var(--letrus); }
 .bio .current li > a:first-child { font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
 .bio .current li > a:first-child:hover { text-decoration-color: currentColor; }
 .bio .current li > a:first-child[href$=".pdf"]::after { content: "PDF \2197"; display: inline-block; margin-left: 6px; padding: 1px 5px; font: 700 10.5px/1.4 var(--sans); letter-spacing: .03em; color: var(--title); border: 1px solid color-mix(in srgb, var(--title) 45%, transparent); border-radius: 4px; vertical-align: 2px; text-decoration: none; }
-/* All paper titles in one colour (burgundy), including the programme-coloured ones */
+/* All paper titles in one colour (ink black), including the programme-coloured ones */
 .ptitle a.pim, .ptitle a.pse, .ptitle a.fhp, .ptitle a.emti, .ptitle a.letrus { color: var(--ptitle, var(--title)); }

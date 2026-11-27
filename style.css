@@ -202,7 +202,8 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
 .wrap { display: block; min-height: 0; }
 .side { position: sticky; top: 0; z-index: 30; background: var(--bar); border: 0; box-shadow: 0 1px 5px rgba(0, 0, 0, .18); }
 .side-inner { position: static; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px;
-  padding: 12px max(24px, calc((100% - 968px) / 2 + 56px)); }
+  /* name starts where paper titles start: content gutter 56px + 3px rule + 14px indent */
+  padding: 12px calc(max(0px, (100% - 1140px) / 2) + 56px) 12px calc(max(0px, (100% - 1140px) / 2) + 73px); }
 .side .name { color: #fff; font-size: 24px; margin-right: auto; }
 .side .role, .side .updated { display: none; }
 .side .sections { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0; font-size: 14.5px; }
@@ -215,7 +216,7 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
 .content { margin: 0 auto; }
 .art { display: none; }   /* the drawing is now the banner */
 @media (max-width: 860px) {
-  .side-inner { display: flex; padding: 10px 16px; gap: 6px 14px; }
+  .side-inner { display: flex; padding: 10px 16px 10px 33px; gap: 6px 14px; }
   .side .name { font-size: 20px; width: 100%; }
   .side .sections { gap: 2px 14px; font-size: 13.5px; }
   .banner { height: 175px; }

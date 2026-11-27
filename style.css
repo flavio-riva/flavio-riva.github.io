@@ -322,3 +322,6 @@ a.letrus, .bio a.letrus, .ptitle a.letrus { color: var(--letrus); }
   border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; overflow-x: auto; white-space: pre; }
 .cite .copy { position: absolute; top: 6px; right: 6px; font: 600 12px/1.4 var(--sans); color: var(--title); background: var(--bg);
   border: 1px solid var(--rule); border-radius: 999px; padding: 1px 9px; cursor: pointer; }
+
+/* Night version: paper titles in a very light gray */
+@media (prefers-color-scheme: dark) { :root:not([data-read="day"]) { --ptitle: #d9dce1; } }

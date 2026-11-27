@@ -327,6 +327,6 @@ a.letrus, .bio a.letrus, .ptitle a.letrus { color: var(--letrus); }
 @media (prefers-color-scheme: dark) { :root:not([data-read="day"]) { --ptitle: #d9dce1; } }
 
 /* Programme logos after paper titles, faded so the titles lead */
-.ptitle .prog-logo, .ptitle .pim-logo { opacity: .5; }
+.ptitle .prog-logo, .ptitle .pim-logo { filter: grayscale(1); opacity: .4; }
 /* Day version: light R&R badge even when the computer is in dark mode */
 :root[data-read="day"] { --rr-bg: #fde6da; --rr-fg: #a63a12; --rr-bd: #ee9a72; }

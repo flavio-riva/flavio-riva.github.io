@@ -11,7 +11,7 @@
   var CITES = [
     { match: "ai_writing_pedagogy", key: "FermanLimaRiva2025", type: "unpublished", authors: ["Ferman, Bruno", "Lima, Lycia", ME], year: 2025, note: "Working paper" },
     { match: "melo_riva_2026_pim", key: "MeloRiva2026", type: "unpublished", authors: ["Melo, Carolina", ME], year: 2026, note: "Working paper" },
-    { match: "phonics_flatten", key: "Riva2026", type: "unpublished", authors: [ME], year: 2026, note: "Working paper" },
+    { match: "equity_case_for_phonics", key: "Riva2026", type: "unpublished", authors: [ME], year: 2026, note: "Working paper" },
     { match: "payoff_to_early_literacy.pdf", key: "Riva2026Literacy", type: "unpublished", authors: [ME], year: 2026, note: "Working paper" },
     { match: "universal_full_day_high_school", key: "FrancoGoussainRiva2026", type: "unpublished", authors: ["Franco, Samuel", "Goussain, Bruna", ME], year: 2026, note: "Working paper" },
     { match: "delivering_health_at_school.pdf", key: "BragaRivaRocha2026", type: "unpublished", authors: ["Braga, Lia", ME, "Rocha, Rudi"], year: 2026, note: "Working paper" },

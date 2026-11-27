@@ -305,3 +305,20 @@ a.letrus, .bio a.letrus, .ptitle a.letrus { color: var(--letrus); }
 .bio .current li > a:first-child[href$=".pdf"]::after { content: "PDF \2197"; display: inline-block; margin-left: 6px; padding: 1px 5px; font: 700 10.5px/1.4 var(--sans); letter-spacing: .03em; color: var(--title); border: 1px solid color-mix(in srgb, var(--title) 45%, transparent); border-radius: 4px; vertical-align: 2px; text-decoration: none; }
 /* All paper titles in one colour (ink black), including the programme-coloured ones */
 .ptitle a.pim, .ptitle a.pse, .ptitle a.fhp, .ptitle a.emti, .ptitle a.letrus { color: var(--ptitle, var(--title)); }
+
+/* ---- Compact entries (entries.js): one details line, then one row of small buttons ---- */
+.meta { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); margin-top: 2px; }
+.meta .by a { color: var(--coauth); font-weight: 500; }
+.dot { color: var(--muted); margin: 0 7px; }
+.toggles { margin-top: 7px; gap: 6px; align-items: center; }
+.toggles .tg, .toggles a.chip { font: 600 12.5px/1.5 var(--sans); color: var(--ink-2); background: none; border: 1px solid var(--rule);
+  border-radius: 999px; padding: 1px 10px; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.toggles .tg:hover, .toggles a.chip:hover { color: var(--title); border-color: var(--title); text-decoration: none; }
+.toggles .tg[aria-expanded="true"] { color: var(--title); border-color: var(--title); background: color-mix(in srgb, var(--title) 8%, transparent); }
+.panel.press { font-size: 14.5px; }
+.panel.press a { color: var(--media); font-weight: 600; }
+.panel.cite { position: relative; }
+.bib { margin: 0; font: 12.5px/1.5 ui-monospace, Consolas, "Courier New", monospace; color: var(--ink); background: var(--side);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; overflow-x: auto; white-space: pre; }
+.cite .copy { position: absolute; top: 6px; right: 6px; font: 600 12px/1.4 var(--sans); color: var(--title); background: var(--bg);
+  border: 1px solid var(--rule); border-radius: 999px; padding: 1px 9px; cursor: pointer; }

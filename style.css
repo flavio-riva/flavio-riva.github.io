@@ -117,7 +117,7 @@ section { scroll-margin-top: 16px; }
 ol.papers { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; }
 ol.papers > li { padding-left: 14px; border-left: 3px solid var(--c, var(--rule)); }
 .a-lab { --c: var(--lab); } .a-hea { --c: var(--hea); } .a-edu { --c: var(--edu); } .a-ec { --c: var(--ec); } .a-vio { --c: var(--vio); }
-.ptitle { font: 600 17.5px/1.38 "Roboto", var(--sans); letter-spacing: -0.005em; }
+.ptitle { font: 700 17.5px/1.4 Charter, "Charis SIL", Cambria, Georgia, serif; }
 .ptitle a, .ptitle .nolink { color: var(--ptitle, var(--title)); }
 .ptitle .nolink { color: var(--ink); }
 .num { color: var(--muted); font-weight: 600; margin-right: 4px; font-variant-numeric: tabular-nums; }
@@ -243,8 +243,8 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
 :root[data-read="day"] body { font-size: 17px; line-height: 1.65; }
 :root[data-read="day"] .bio { font-size: 17px; line-height: 1.65; }
 :root[data-read="day"] .bio a { font-weight: 500; }
-:root[data-read="day"] .ptitle a { font-weight: 600; }
-:root[data-read="day"] .ptitle { font: 600 17.5px/1.38 "Roboto", var(--sans); letter-spacing: -0.005em; }
+:root[data-read="day"] .ptitle a { font-weight: 700; }
+:root[data-read="day"] .ptitle { font: 700 17.5px/1.4 Charter, "Charis SIL", Cambria, Georgia, serif; }
 :root[data-read="day"] h2 { font: 500 26px/1.25 var(--day-serif); letter-spacing: 0; text-transform: none; color: var(--ink); }
 :root[data-read="day"] .side { background: color-mix(in srgb, #fdfdfc 92%, transparent); backdrop-filter: blur(6px);
   box-shadow: none; border-bottom: 1px solid #e2e5e6; }

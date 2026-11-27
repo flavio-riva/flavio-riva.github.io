@@ -325,3 +325,6 @@ a.letrus, .bio a.letrus, .ptitle a.letrus { color: var(--letrus); }
 
 /* Night version: paper titles in a very light gray */
 @media (prefers-color-scheme: dark) { :root:not([data-read="day"]) { --ptitle: #d9dce1; } }
+
+/* Programme logos after paper titles, faded so the titles lead */
+.ptitle .prog-logo, .ptitle .pim-logo { opacity: .5; }

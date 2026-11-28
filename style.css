@@ -26,7 +26,7 @@
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 /* Whole page scaled on desktop (text, sidebar, photo and column together): 1.1 x 15/16, i.e. 10% larger and then one point smaller; phones keep their own layout. */
 @media (min-width: 861px) { body { zoom: 1.03; } }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 var(--sans); font-style: normal; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.6 var(--sans); font-style: normal; }
 /* Type after cristobalotero.com: Roboto bold for the name (after flavia-leite.github.io), Lato bold for paper titles, Noto Sans for everything else. */
 h2, .tags, .badge, .tg, .lang-toggle, .num, .legend, .updated, .art-credit { font-family: var(--sans); }
 i, em, cite { font-style: normal; }
@@ -46,7 +46,7 @@ b, strong { font-weight: 700; }
 .side { background: var(--side); border-right: 1px solid var(--rule); }
 .side-inner { position: sticky; top: 0; padding: 44px 28px 32px; z-index: 1; display: grid; gap: 14px; }
 /* Name set like flavia-leite.github.io: Roboto bold. */
-.name { font: 700 30px/1.15 "Roboto", var(--sans); margin: 0; color: var(--ink); }
+.name { font: 700 27px/1.15 "Roboto", var(--sans); margin: 0; color: var(--ink); }
 .name .nw { white-space: nowrap; }
 .role { font-size: 14px; line-height: 1.45; color: var(--ink-2); }
 .role a { font-weight: 700; color: var(--coauth); }
@@ -73,18 +73,18 @@ b, strong { font-weight: 700; }
 .updated { margin-top: 18px; font-size: 12.5px; color: var(--muted); }
 
 .content { padding: 52px 56px 64px; max-width: 1140px; /* wide enough for every working-paper and publication title on one line */ }
-.contact { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 15px; color: var(--muted); }
+.contact { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 14px; color: var(--muted); }
 .contact a { font-weight: 500; }
 /* Main text as on the old sites (Google Site, flavioriva-policy.github.io/site): Noto Sans, regular
    weight, soft grey, links in regular-weight blue, no bold. */
-.bio { margin-top: 22px; display: grid; gap: 12px; font: 400 16.5px/1.6 var(--sans); color: var(--text-old); }
+.bio { margin-top: 22px; display: grid; gap: 12px; font: 400 15.5px/1.6 var(--sans); color: var(--text-old); }
 .bio a { font-weight: 600; color: var(--title); }
 /* Main projects as a short bulleted list closing the bio. */
 .current ul { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 4px; }
 .current li::marker { color: var(--muted); }
 /* All links in the list in the bio blue (program colours are kept in the Research section); slides on a line below each title. */
 .bio .current a, .bio .current a.pim, .bio .current a.pse, .bio .current a.fhp, .bio .current a.emti { color: var(--title); }
-.current .cur-mat { display: block; font-size: 14.5px; line-height: 1.5; }
+.current .cur-mat { display: block; font-size: 13.5px; line-height: 1.5; }
 .bio .current .cur-mat a { font-weight: 500; }
 
 /* Area legend */
@@ -117,11 +117,11 @@ section { scroll-margin-top: 16px; }
 ol.papers { list-style: none; margin: 0; padding: 0; display: grid; gap: 30px; }
 ol.papers > li { padding-left: 14px; border-left: 3px solid var(--c, var(--rule)); }
 .a-lab { --c: var(--lab); } .a-hea { --c: var(--hea); } .a-edu { --c: var(--edu); } .a-ec { --c: var(--ec); } .a-vio { --c: var(--vio); }
-.ptitle { font: 700 17.5px/1.4 Charter, "Charis SIL", Cambria, Georgia, serif; }
+.ptitle { font: 700 16px/1.4 Charter, "Charis SIL", Cambria, Georgia, serif; }
 .ptitle a, .ptitle .nolink { color: var(--ptitle, var(--title)); }
 .ptitle .nolink { color: var(--ink); }
 .num { color: var(--muted); font-weight: 600; margin-right: 4px; font-variant-numeric: tabular-nums; }
-.by, .status, .mat, .media { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); margin-top: 2px; }
+.by, .status, .mat, .media { font-size: 13.5px; line-height: 1.55; color: var(--ink-2); margin-top: 2px; }
 .by a { color: var(--coauth); font-weight: 500; }
 .status .venue { font-weight: 600; color: var(--ink); }
 .mat b, .media b { font-weight: 500; color: var(--ink-2); }
@@ -143,11 +143,11 @@ ol.papers > li { padding-left: 14px; border-left: 3px solid var(--c, var(--rule)
 .tags > .t-lab { --c: var(--lab); } .tags > .t-hea { --c: var(--hea); } .tags > .t-edu { --c: var(--edu); } .tags > .t-ec { --c: var(--ec); } .tags > .t-vio { --c: var(--vio); }
 
 .toggles { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px 14px; }
-.tg { font: 600 14px/1.5 var(--sans); color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer; }
+.tg { font: 600 13px/1.5 var(--sans); color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer; }
 .tg:hover, .tg[aria-expanded="true"] { color: var(--c, var(--title)); }
 .panel { margin: 6px 0 4px; }
-.blurb { font-size: 15px; line-height: 1.6; color: var(--ink); background: color-mix(in srgb, var(--c, var(--title)) 6%, transparent); border-radius: 4px; padding: 8px 12px; }
-.abstract { font-size: 14px; line-height: 1.6; text-align: justify; color: var(--ink-2); }
+.blurb { font-size: 14px; line-height: 1.6; color: var(--ink); background: color-mix(in srgb, var(--c, var(--title)) 6%, transparent); border-radius: 4px; padding: 8px 12px; }
+.abstract { font-size: 13.5px; line-height: 1.6; text-align: justify; color: var(--ink-2); }
 
 ul.plain { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
 
@@ -180,11 +180,11 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
 /* "In short" summaries hidden for now; the Abstract toggle stays. */
 .tg[data-p="q"], .panel[data-p="q"] { display: none !important; }
 /* Consulting paragraph (Portuguese only), at the very end after the drawing; set like the bio. */
-.closing { margin-top: 36px; font: 400 16.5px/1.6 var(--sans); color: var(--text-old); }
+.closing { margin-top: 36px; font: 400 15.5px/1.6 var(--sans); color: var(--text-old); }
 .closing a { font-weight: 600; color: var(--title); }
 /* Plataforma Impacto (Portuguese only), the last section of the page; set like the bio. */
 .plataforma { margin-top: 40px; display: grid; gap: 10px; }
-.plataforma p { font: 400 16.5px/1.6 var(--sans); color: var(--text-old); margin: 0; }
+.plataforma p { font: 400 15.5px/1.6 var(--sans); color: var(--text-old); margin: 0; }
 .plataforma a { font-weight: 600; color: var(--title); }
 /* Two screenshots of Plataforma Impacto (landing page and one evaluation entry), side by side. */
 .plataforma-figs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 8px; }
@@ -204,9 +204,9 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
 .side-inner { position: static; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px;
   /* name starts where paper titles start: content gutter 56px + 3px rule + 14px indent */
   padding: 12px calc(max(0px, (100% - 1140px) / 2) + 56px) 12px calc(max(0px, (100% - 1140px) / 2) + 73px); }
-.side .name { color: #fff; font-size: 24px; margin-right: auto; }
+.side .name { color: #fff; font-size: 22px; margin-right: auto; }
 .side .role, .side .updated { display: none; }
-.side .sections { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0; font-size: 14.5px; }
+.side .sections { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0; font-size: 13.5px; }
 .side .sections a { color: var(--bar-ink); font-weight: 500; }
 .side .sections a:hover { color: #fff; text-decoration: underline; }
 .side .lang-toggle { margin: 0 0 0 auto; color: #fff; border-color: rgba(255, 255, 255, .6); padding: 5px 9px; }
@@ -240,15 +240,15 @@ html[data-lang="en"] .sections a.pt-first, html[data-lang="pt"] .sections a.en-l
   --day-serif: "Newsreader", Georgia, "Times New Roman", serif;
   color-scheme: light;
 }
-:root[data-read="day"] body { font-size: 17px; line-height: 1.65; }
-:root[data-read="day"] .bio { font-size: 17px; line-height: 1.65; }
+:root[data-read="day"] body { font-size: 15.5px; line-height: 1.65; }
+:root[data-read="day"] .bio { font-size: 15.5px; line-height: 1.65; }
 :root[data-read="day"] .bio a { font-weight: 500; }
 :root[data-read="day"] .ptitle a { font-weight: 700; }
-:root[data-read="day"] .ptitle { font: 700 17.5px/1.4 Charter, "Charis SIL", Cambria, Georgia, serif; }
-:root[data-read="day"] h2 { font: 500 26px/1.25 var(--day-serif); letter-spacing: 0; text-transform: none; color: var(--ink); }
+:root[data-read="day"] .ptitle { font: 700 16px/1.4 Charter, "Charis SIL", Cambria, Georgia, serif; }
+:root[data-read="day"] h2 { font: 500 23px/1.25 var(--day-serif); letter-spacing: 0; text-transform: none; color: var(--ink); }
 :root[data-read="day"] .side { background: color-mix(in srgb, #fdfdfc 92%, transparent); backdrop-filter: blur(6px);
   box-shadow: none; border-bottom: 1px solid #e2e5e6; }
-:root[data-read="day"] .side .name { color: #14181b; font: 500 24px/1.15 var(--day-serif); }
+:root[data-read="day"] .side .name { color: #14181b; font: 500 22px/1.15 var(--day-serif); }
 :root[data-read="day"] .side .sections a { color: #5a656e; }
 :root[data-read="day"] .side .sections a:hover { color: #0e5c60; text-decoration: none; }
 :root[data-read="day"] .side .lang-toggle { color: #0e5c60; border-color: #cdd2d4; }
@@ -307,18 +307,18 @@ a.letrus, .bio a.letrus, .ptitle a.letrus { color: var(--letrus); }
 .ptitle a.pim, .ptitle a.pse, .ptitle a.fhp, .ptitle a.emti, .ptitle a.letrus { color: var(--ptitle, var(--title)); }
 
 /* ---- Compact entries (entries.js): one details line, then one row of small buttons ---- */
-.meta { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); margin-top: 2px; }
+.meta { font-size: 13.5px; line-height: 1.55; color: var(--ink-2); margin-top: 2px; }
 .meta .by a { color: var(--coauth); font-weight: 500; }
 .dot { color: var(--muted); margin: 0 7px; }
 .toggles { margin-top: 7px; gap: 6px; align-items: center; }
-.toggles .tg, .toggles a.chip { font: 600 12.5px/1.5 var(--sans); color: var(--ink-2); background: none; border: 1px solid var(--rule);
+.toggles .tg, .toggles a.chip { font: 600 12px/1.5 var(--sans); color: var(--ink-2); background: none; border: 1px solid var(--rule);
   border-radius: 999px; padding: 1px 10px; text-decoration: none; white-space: nowrap; cursor: pointer; }
 .toggles .tg:hover, .toggles a.chip:hover { color: var(--title); border-color: var(--title); text-decoration: none; }
 .toggles .tg[aria-expanded="true"] { color: var(--title); border-color: var(--title); background: color-mix(in srgb, var(--title) 8%, transparent); }
-.panel.press { font-size: 14.5px; }
+.panel.press { font-size: 13.5px; }
 .panel.press a { color: var(--media); font-weight: 600; }
 .panel.cite { position: relative; }
-.bib { margin: 0; font: 12.5px/1.5 ui-monospace, Consolas, "Courier New", monospace; color: var(--ink); background: var(--side);
+.bib { margin: 0; font: 12px/1.5 ui-monospace, Consolas, "Courier New", monospace; color: var(--ink); background: var(--side);
   border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; overflow-x: auto; white-space: pre; }
 .cite .copy { position: absolute; top: 6px; right: 6px; font: 600 12px/1.4 var(--sans); color: var(--title); background: var(--bg);
   border: 1px solid var(--rule); border-radius: 999px; padding: 1px 9px; cursor: pointer; }
